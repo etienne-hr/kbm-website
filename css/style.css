@@ -17,6 +17,9 @@
 body {
   background: var(--primary); }
 
+li {
+  list-style: none; }
+
 body {
   background: var(--primary); }
 
@@ -25,8 +28,12 @@ h2 {
 
 .services-container {
   display: flex;
+  width: 100vw;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
+  .services-container h3 {
+    color: var(--secondary); }
   .services-container .slider-services {
     width: 669px;
     height: 818px;
@@ -42,6 +49,18 @@ h2 {
         .services-container .slider-services .slide .image img {
           max-width: 100%;
           max-height: auto; }
+    .services-container .slider-services .slider-btn {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center; }
+      .services-container .slider-services .slider-btn li {
+        border: 2px solid white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin: 0px 15px 0px 15px; }
     .services-container .slider-services .btn-service-right {
       position: absolute;
       top: 50%;

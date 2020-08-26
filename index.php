@@ -75,6 +75,18 @@ include './includes/config/config.php';
                                         <path d="M48.6441 16.2462L31.1441 32.7462L48.6441 49.2462L45.1441 55.8462L20.6441 32.7462L45.1441 9.64624L48.6441 16.2462Z" fill="white" />
                                 </svg>
                         </div>
+                        <ul class="slider-btn">
+                                <li data-pos="0"></li>
+                                <li data-pos="1"></li>
+                                <li data-pos="6"></li>
+                                <li data-pos="2"></li>
+                                <li data-pos="3"></li>
+                                <li data-pos="4"></li>
+                                <li data-pos="5"></li>
+                                <li data-pos="6"></li>
+                                <li data-pos="7"></li>
+                                <li data-pos="8"></li>
+                        </ul>
                 </div>
         </div>
         <script src="index.js"></script>

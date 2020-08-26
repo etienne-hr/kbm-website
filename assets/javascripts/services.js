@@ -15,32 +15,54 @@ class Slider {
     let sliderMove = 0;
     const sliderSize = slider.offsetWidth;
     let slideTarget = 0;
+
     this.btnLeft.style.display = "none";
 
-    this.btnRight.addEventListener("click", (event) => {
-      sliderMove += sliderSize;
-      this.slide.style.left = -sliderMove + "px";
-
-      if (slideTarget === this.image.length - 2) {
+    this.btnRight.addEventListener("click", () => {
+      if (slideTarget < this.image.length - 1) {
+        sliderMove += sliderSize;
+        this.slide.style.left = -sliderMove + "px";
+        slideTarget += 1;
+        this.btnLeft.style.display = "block";
+      } else {
         this.btnRight.style.display = "none";
       }
-
-      this.btnLeft.style.display = "block";
-
-      slideTarget += 1;
+      console.log(slideTarget);
     });
 
-    this.btnLeft.addEventListener("click", (event) => {
+    this.btnLeft.addEventListener("click", () => {
       sliderMove = sliderMove - sliderSize;
       this.slide.style.left = -sliderMove + "px";
       if (slideTarget <= this.image.length - 1) {
         this.btnRight.style.display = "block";
       }
-      if (slideTarget === 1) {
+      if (slideTarget <= 1) {
         this.btnLeft.style.display = "none";
       }
       slideTarget = slideTarget - 1;
+      console.log(slideTarget);
     });
+
+    setInterval(() => {
+      // console.log(slideTarget);
+      if (slideTarget < this.image.length - 1) {
+        this.btnLeft.style.display = "block";
+        sliderMove += sliderSize;
+        this.slide.style.left = -sliderMove + "px";
+        // console.log(slideTarget);
+        slideTarget += 1;
+      } else {
+        this.btnLeft.style.display = "none";
+        this.btnRight.style.display = "block";
+        slideTarget = 0;
+        sliderMove = -1;
+        this.slide.style.left = -sliderMove + "px";
+      }
+      if (slideTarget === this.image.length - 1) {
+        this.btnRight.style.display = "none";
+      }
+      console.log(slideTarget);
+    }, 3000);
   }
 }
 
