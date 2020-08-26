@@ -1,0 +1,56 @@
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --orange: #e67817; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Landscape phones and down */
+/* Landscape phones to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Portrait tablet to landscape and desktop */
+:root {
+  font-size: 62.5%; }
+
+body {
+  background: var(--primary); }
+
+body {
+  background: var(--primary); }
+
+h2 {
+  color: var(--secondary); }
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .services-container .slider-services {
+    width: 669px;
+    height: 818px;
+    position: relative;
+    overflow: hidden; }
+    .services-container .slider-services .slide {
+      position: absolute;
+      display: flex; }
+      .services-container .slider-services .slide .image {
+        position: relative;
+        width: 669px;
+        height: 818px; }
+        .services-container .slider-services .slide .image img {
+          max-width: 100%;
+          max-height: auto; }
+    .services-container .slider-services .btn-service-right {
+      position: absolute;
+      top: 50%;
+      left: 90%;
+      width: 70px;
+      height: 50px; }
+    .services-container .slider-services .btn-service-left {
+      position: absolute;
+      left: 0;
+      width: 70px;
+      height: 50px;
+      top: 50%; }
