@@ -5,10 +5,10 @@ class Slider {
   constructor(slider) {
     // console.log(slider);
     this.slider = slider;
-
+    this.dots = document.querySelectorAll(".slider-services .slider-btn li");
+    console.log(this.dots);
     this.slide = this.slider.querySelector(".slide");
     this.image = this.slide.querySelectorAll(".image");
-    console.log(this.image);
     this.btnRight = document.querySelector(".btn-service-right svg");
     this.btnLeft = document.querySelector(".btn-service-left svg");
 
@@ -27,6 +27,7 @@ class Slider {
       } else {
         this.btnRight.style.display = "none";
       }
+      targetDot(this.dots, slideTarget);
       console.log(slideTarget);
     });
 
@@ -40,6 +41,7 @@ class Slider {
         this.btnLeft.style.display = "none";
       }
       slideTarget = slideTarget - 1;
+      targetDot(this.dots, slideTarget);
       console.log(slideTarget);
     });
 
@@ -62,8 +64,21 @@ class Slider {
         this.btnRight.style.display = "none";
       }
       console.log(slideTarget);
+      targetDot(this.dots, slideTarget);
     }, 3000);
+
+    const targetDot = (dots, slidetarget) => {
+      dots.forEach((dot) => {
+        if (slidetarget == dot.dataset.pos) {
+          dot.classList.add("current-dot");
+        } else {
+          dot.classList.remove("current-dot");
+        }
+      });
+    };
   }
+  // targetDot(dots, slideTarget) {
+  // }
 }
 
 const slider = new Slider(sliderOne);
