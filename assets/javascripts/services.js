@@ -51,7 +51,6 @@ class Slider {
         this.btnLeft.style.display = "block";
         sliderMove += sliderSize;
         this.slide.style.left = -sliderMove + "px";
-        // console.log(slideTarget);
         slideTarget += 1;
       } else {
         this.btnLeft.style.display = "none";
@@ -63,7 +62,8 @@ class Slider {
       if (slideTarget === this.image.length - 1) {
         this.btnRight.style.display = "none";
       }
-      console.log(slideTarget);
+      // console.log(slideTarget);
+      console.log(sliderMove);
       targetDot(this.dots, slideTarget);
     }, 3000);
 
@@ -76,6 +76,28 @@ class Slider {
         }
       });
     };
+
+    for (const dot of this.dots) {
+      dot.addEventListener("click", () => {
+        slideTarget = parseInt(dot.dataset.pos);
+        sliderMove = sliderSize * slideTarget;
+        this.slide.style.left = -sliderMove + "px";
+        console.log(slideTarget);
+        if (slideTarget === this.image.length - 1) {
+          this.btnRight.style.display = "none";
+          this.btnLeft.style.display = "block";
+        } else {
+          this.btnRight.style.display = "block";
+        }
+        if (slideTarget < 1) {
+          this.btnLeft.style.display = "none";
+          this.btnRight.style.display = "block";
+        } else {
+          this.btnLeft.style.display = "block";
+        }
+        targetDot(this.dots, slideTarget);
+      });
+    }
   }
   // targetDot(dots, slideTarget) {
   // }
