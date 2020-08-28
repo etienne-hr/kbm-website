@@ -1,11 +1,19 @@
 :root {
   --primary: #000000;
   --secondary: #ffffff;
-  --orange: #e67817; }
+  --orange: #e67817;
+  --shadow-button: 4px 0px 4px rgba(0, 0, 0, 0.25),
+    -4px 0px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 * {
   margin: 0;
   padding: 0; }
+
+.container-white {
+  background: var(--secondary);
+  width: 100vw;
+  height: 100vh; }
 
 /* Landscape phones and down */
 /* Landscape phones to portrait tablet */
@@ -15,10 +23,14 @@
   font-size: 62.5%; }
 
 body {
-  background: var(--primary); }
+  background: var(--primary);
+  font-family: "Montserrat", sans-serif; }
 
 li {
   list-style: none; }
+
+button {
+  border: none; }
 
 body {
   background: var(--primary); }
@@ -75,3 +87,74 @@ h2 {
       width: 70px;
       height: 50px;
       top: 50%; }
+
+.landing-page {
+  position: relative; }
+  @media (min-width: 1200px) {
+    .landing-page {
+      padding-left: 10%; } }
+  .landing-page .logo-top {
+    position: absolute;
+    max-width: 200px;
+    max-height: 167px;
+    top: 0;
+    left: 0;
+    margin: 2rem 0 0 1rem; }
+    .landing-page .logo-top img {
+      width: 100%;
+      height: 100%; }
+  .landing-page .presentation {
+    position: absolute;
+    margin-top: 15rem;
+    max-width: 90vw;
+    max-height: 80vh;
+    z-index: 0; }
+    .landing-page .presentation .presentation-container {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      box-shadow: var(--shadow-button);
+      display: flex; }
+      .landing-page .presentation .presentation-container img {
+        width: 100%;
+        height: 100%; }
+      .landing-page .presentation .presentation-container .top-slogan {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        margin-left: 1%; }
+        .landing-page .presentation .presentation-container .top-slogan p {
+          font-weight: 500;
+          font-size: 4rem;
+          color: var(--secondary); }
+      .landing-page .presentation .presentation-container button {
+        background: var(--orange);
+        box-shadow: var(--shadow-button);
+        width: 35%;
+        height: 15%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+        color: var(--secondary);
+        font-size: 2rem; }
+        @media (max-width: 480px) {
+          .landing-page .presentation .presentation-container button {
+            bottom: -15rem;
+            width: 125px;
+            height: 50px; } }
+    .landing-page .presentation .display-orange {
+      position: absolute;
+      width: 603px;
+      height: 409px;
+      background: var(--orange);
+      top: -5rem;
+      right: -5rem;
+      z-index: -1; }
+      @media (max-width: 480px) {
+        .landing-page .presentation .display-orange {
+          display: none; } }
+      @media (max-width: 767px) {
+        .landing-page .presentation .display-orange {
+          display: none; } }

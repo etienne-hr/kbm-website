@@ -104,14 +104,3 @@ class Slider {
 }
 
 const slider = new Slider(sliderOne);
-
-// for (const slide of this.slide) {
-//   if (slide.classList.contains("is-target")) {
-//     console.log("yyyyyeeee");
-//     this.btnRight.addEventListener("click", (event) => {
-//       console.log(slide);
-//       slide.classList.remove("is-target");
-//       slide.classList.add("left");
-//     });
-//   }
-// }

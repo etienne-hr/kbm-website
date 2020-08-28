@@ -4,8 +4,13 @@
 
 body {
   background: var(--primary);
+  font-family: "Montserrat", sans-serif;
 }
 
 li {
   list-style: none;
+}
+
+button {
+  border: none;
 }
