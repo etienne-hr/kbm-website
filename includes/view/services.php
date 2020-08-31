@@ -1,32 +1,33 @@
 <?php
-echo '<h2> SERVICES </h2>
+echo '
 <div class="services-container">
+                <h2> SERVICES </h2>
                 <h3> Métallerie - Serrurerie</h3>
                 <div class="slider-services">
                         <div class="slide">
                                 <div class="image">
-                                        <img src="assets\images\metallerie\IMG_1674.JPG" alt="">
+                                        <img src="assets\images\metallerie\photo1.png" alt="">
                                 </div>
                                 <div class="image">
-                                        <img src="assets\images\metallerie\IMG_1744.JPG" alt="">
+                                        <img src="assets\images\metallerie\photo2.png" alt="">
                                 </div>
                                 <div class="image">
-                                        <img src="assets\images\metallerie\IMG_1749.JPG" alt="">
+                                        <img src="assets\images\metallerie\photo3.png" alt="">
                                 </div>
                                 <div class="image">
-                                        <img src="assets\images\metallerie\IMG_1753.JPG" alt="">
+                                        <img src="assets\images\metallerie\photo4.png" alt="">
                                 </div>
                                 <div class="image">
-                                        <img src="assets\images\metallerie\IMG_1864.JPG" alt="">
+                                        <img src="assets\images\metallerie\photo5.png" alt="">
                                 </div>
                                 <div class="image">
-                                        <img src="assets\images\metallerie\IMG_1857.JPG" alt="">
+                                        <img src="assets\images\metallerie\photo6.png" alt="">
                                 </div>
                                 <div class="image">
-                                        <img src="assets\images\metallerie\IMG_1862.JPG" alt="">
+                                        <img src="assets\images\metallerie\photo7.png" alt="">
                                 </div>
                                 <div class="image">
-                                        <img src="assets\images\metallerie\IMG_1863.JPG" alt="">
+                                        <img src="assets\images\metallerie\photo8.png" alt="">
                                 </div>
                         </div>
                         <div class="btn-service-right">

@@ -24,7 +24,8 @@
 
 body {
   background: var(--primary);
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; }
 
 li {
   list-style: none; }
@@ -51,6 +52,10 @@ h2 {
     height: 818px;
     position: relative;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      .services-container .slider-services {
+        width: 413px;
+        height: 506px; } }
     .services-container .slider-services .slide {
       position: absolute;
       display: flex; }
@@ -58,6 +63,10 @@ h2 {
         position: relative;
         width: 669px;
         height: 818px; }
+        @media (max-width: 767px) {
+          .services-container .slider-services .slide .image {
+            width: 413px;
+            height: 506px; } }
         .services-container .slider-services .slide .image img {
           max-width: 100%;
           max-height: auto; }
@@ -90,6 +99,17 @@ h2 {
 
 .landing-page {
   position: relative; }
+  @media (max-width: 480px) {
+    .landing-page {
+      height: 50vh;
+      width: 100vw; } }
+  @media (max-width: 767px) {
+    .landing-page {
+      height: 70vh;
+      width: 100vw; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .landing-page {
+      height: 80vh; } }
   @media (min-width: 1200px) {
     .landing-page {
       padding-left: 10%; } }
@@ -130,8 +150,8 @@ h2 {
       .landing-page .presentation .presentation-container button {
         background: var(--orange);
         box-shadow: var(--shadow-button);
-        width: 35%;
-        height: 15%;
+        width: 307.422px;
+        height: 84.4688px;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -144,6 +164,10 @@ h2 {
             bottom: -15rem;
             width: 125px;
             height: 50px; } }
+        @media (max-width: 767px) {
+          .landing-page .presentation .presentation-container button {
+            width: 35%;
+            height: 15%; } }
     .landing-page .presentation .display-orange {
       position: absolute;
       width: 603px;

@@ -1,5 +1,16 @@
 .landing-page {
   position: relative;
+  @include xs {
+    height: 50vh;
+    width: 100vw;
+  }
+  @include sm {
+    height: 70vh;
+    width: 100vw;
+  }
+  @include md {
+    height: 80vh;
+  }
   @include xl {
     padding-left: 10%;
   }
@@ -45,8 +56,8 @@
       button {
         background: var(--orange);
         box-shadow: var(--shadow-button);
-        width: 35%;
-        height: 15%;
+        width: 307.422px;
+        height: 84.4688px;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -54,10 +65,17 @@
         margin-bottom: 3rem;
         color: var(--secondary);
         font-size: 2rem;
+        &:hover {
+          // background: green;
+        }
         @include xs {
           bottom: -15rem;
           width: 125px;
           height: 50px;
+        }
+        @include sm {
+          width: 35%;
+          height: 15%;
         }
       }
     }

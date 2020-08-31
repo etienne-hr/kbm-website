@@ -18,6 +18,10 @@ h2 {
   .slider-services {
     width: 669px;
     height: 818px;
+    @include sm {
+      width: 413px;
+      height: 506px;
+    }
     position: relative;
     overflow: hidden;
     .slide {
@@ -27,6 +31,10 @@ h2 {
         position: relative;
         width: 669px;
         height: 818px;
+        @include sm {
+          width: 413px;
+          height: 506px;
+        }
         img {
           max-width: 100%;
           max-height: auto;

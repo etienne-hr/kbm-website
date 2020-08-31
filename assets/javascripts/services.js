@@ -4,17 +4,26 @@ const sliderOne = document.querySelector(".slider-services");
 class Slider {
   constructor(slider) {
     // console.log(slider);
+
     this.slider = slider;
+    console.log(this.slider);
     this.dots = document.querySelectorAll(".slider-services .slider-btn li");
-    console.log(this.dots);
     this.slide = this.slider.querySelector(".slide");
     this.image = this.slide.querySelectorAll(".image");
     this.btnRight = document.querySelector(".btn-service-right svg");
     this.btnLeft = document.querySelector(".btn-service-left svg");
 
     let sliderMove = 0;
-    const sliderSize = slider.offsetWidth;
+    let sliderSize = slider.offsetWidth;
     let slideTarget = 0;
+
+    //responsive
+    this.window = window;
+    this.window.addEventListener("resize", (event) => {
+      this.slider = slider;
+      sliderMove = 0;
+      sliderSize = slider.offsetWidth;
+    });
 
     this.btnLeft.style.display = "none";
 
@@ -62,8 +71,6 @@ class Slider {
       if (slideTarget === this.image.length - 1) {
         this.btnRight.style.display = "none";
       }
-      // console.log(slideTarget);
-      console.log(sliderMove);
       targetDot(this.dots, slideTarget);
     }, 3000);
 
@@ -104,3 +111,11 @@ class Slider {
 }
 
 const slider = new Slider(sliderOne);
+
+let test = [];
+
+for (let index = 0; index < 1; index++) {
+  test.push(Math.floor(Math.random() * 10));
+}
+
+console.log(test);
