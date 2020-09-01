@@ -2,6 +2,7 @@
   --primary: #000000;
   --secondary: #ffffff;
   --orange: #e67817;
+  --orangeless: rgba(230, 120, 23, 0.52);
   --shadow-button: 4px 0px 4px rgba(0, 0, 0, 0.25),
     -4px 0px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25); }
@@ -27,42 +28,56 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden; }
 
+h2 {
+  font-weight: bold;
+  font-size: 6rem;
+  letter-spacing: -0.015em; }
+
+h3 {
+  font-weight: normal;
+  font-size: 3rem;
+  letter-spacing: 0.11em; }
+
 li {
   list-style: none; }
 
 button {
   border: none; }
 
-body {
-  background: var(--primary); }
-
-h2 {
-  color: var(--secondary); }
-
 .services-container {
   display: flex;
-  width: 100vw;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .services-container h2 {
+    color: var(--secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 5rem 0 0 3rem; }
   .services-container h3 {
-    color: var(--secondary); }
+    color: var(--secondary);
+    color: var(--orange);
+    margin-bottom: 30px; }
+  .services-container .metallerie-serrurerie {
+    margin: 150px 0 30px 0; }
   .services-container .slider-services {
     width: 669px;
-    height: 818px;
+    height: 690px;
     position: relative;
     overflow: hidden; }
     @media (max-width: 767px) {
       .services-container .slider-services {
         width: 413px;
-        height: 506px; } }
+        height: 440px; } }
     .services-container .slider-services .slide {
       position: absolute;
       display: flex; }
       .services-container .slider-services .slide .image {
         position: relative;
         width: 669px;
-        height: 818px; }
+        height: 100%; }
         @media (max-width: 767px) {
           .services-container .slider-services .slide .image {
             width: 413px;
@@ -71,23 +86,27 @@ h2 {
           max-width: 100%;
           max-height: auto; }
     .services-container .slider-services .slider-btn {
+      margin: 0 auto;
       width: 100%;
+      height: 20px;
       position: absolute;
       bottom: 0;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 15%; }
       .services-container .slider-services .slider-btn li {
-        border: 2px solid white;
-        width: 25px;
-        height: 25px;
+        background: var(--orangeless);
+        width: 14px;
+        height: 14px;
         border-radius: 50%;
-        margin: 0px 15px 0px 15px; }
+        margin: 0px 5px 0px 5px; }
       .services-container .slider-services .slider-btn .current-dot {
-        background: red; }
+        background: var(--orange); }
     .services-container .slider-services .btn-service-right {
       position: absolute;
+      right: 0;
       top: 50%;
-      left: 90%;
       width: 70px;
       height: 50px; }
     .services-container .slider-services .btn-service-left {
@@ -98,18 +117,20 @@ h2 {
       top: 50%; }
 
 .landing-page {
-  position: relative; }
+  position: relative;
+  min-height: 700px;
+  max-height: 100vh; }
   @media (max-width: 480px) {
     .landing-page {
-      height: 50vh;
+      min-height: 420px;
       width: 100vw; } }
   @media (max-width: 767px) {
     .landing-page {
-      height: 70vh;
+      max-height: 650px;
       width: 100vw; } }
   @media (min-width: 768px) and (max-width: 979px) {
     .landing-page {
-      height: 80vh; } }
+      max-height: 700px; } }
   @media (min-width: 1200px) {
     .landing-page {
       padding-left: 10%; } }

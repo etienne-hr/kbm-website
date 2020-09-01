@@ -1,15 +1,18 @@
 .landing-page {
   position: relative;
+  min-height: 700px;
+  max-height: 100vh;
   @include xs {
-    height: 50vh;
+    min-height: 420px;
     width: 100vw;
   }
   @include sm {
-    height: 70vh;
+    // height: 70vh;
+    max-height: 650px;
     width: 100vw;
   }
   @include md {
-    height: 80vh;
+    max-height: 700px;
   }
   @include xl {
     padding-left: 10%;

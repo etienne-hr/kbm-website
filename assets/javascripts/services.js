@@ -1,17 +1,17 @@
 // const btnRight = document.querySelector(".btn-service-right");
-const sliderOne = document.querySelector(".slider-services");
+const sliderOne = document.querySelector(".slider1");
+const sliderTwo = document.querySelector(".slider2");
+const sliderThree = document.querySelector(".slider3");
+const sliderFour = document.querySelector(".slider4");
 
 class Slider {
   constructor(slider) {
-    // console.log(slider);
-
     this.slider = slider;
-    console.log(this.slider);
-    this.dots = document.querySelectorAll(".slider-services .slider-btn li");
+    this.dots = this.slider.querySelectorAll(".slider-services .slider-btn li");
     this.slide = this.slider.querySelector(".slide");
     this.image = this.slide.querySelectorAll(".image");
-    this.btnRight = document.querySelector(".btn-service-right svg");
-    this.btnLeft = document.querySelector(".btn-service-left svg");
+    this.btnRight = this.slider.querySelector(".btn-service-right svg");
+    this.btnLeft = this.slider.querySelector(".btn-service-left svg");
 
     let sliderMove = 0;
     let sliderSize = slider.offsetWidth;
@@ -36,8 +36,10 @@ class Slider {
       } else {
         this.btnRight.style.display = "none";
       }
+      if (slideTarget === this.image.length - 1) {
+        this.btnRight.style.display = "none";
+      }
       targetDot(this.dots, slideTarget);
-      console.log(slideTarget);
     });
 
     this.btnLeft.addEventListener("click", () => {
@@ -51,7 +53,6 @@ class Slider {
       }
       slideTarget = slideTarget - 1;
       targetDot(this.dots, slideTarget);
-      console.log(slideTarget);
     });
 
     setInterval(() => {
@@ -89,7 +90,6 @@ class Slider {
         slideTarget = parseInt(dot.dataset.pos);
         sliderMove = sliderSize * slideTarget;
         this.slide.style.left = -sliderMove + "px";
-        console.log(slideTarget);
         if (slideTarget === this.image.length - 1) {
           this.btnRight.style.display = "none";
           this.btnLeft.style.display = "block";
@@ -106,16 +106,9 @@ class Slider {
       });
     }
   }
-  // targetDot(dots, slideTarget) {
-  // }
 }
 
-const slider = new Slider(sliderOne);
-
-let test = [];
-
-for (let index = 0; index < 1; index++) {
-  test.push(Math.floor(Math.random() * 10));
-}
-
-console.log(test);
+const sliderMetal = new Slider(sliderOne);
+const sliderAuto = new Slider(sliderTwo);
+const sliderSecu = new Slider(sliderThree);
+const sliderNego = new Slider(sliderFour);

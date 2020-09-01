@@ -1,26 +1,30 @@
-body {
-  background: var(--primary);
-}
-
-h2 {
-  color: var(--secondary);
-}
-
 .services-container {
   display: flex;
-  width: 100vw;
+  position: relative;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  h2 {
+    color: var(--secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 5rem 0 0 3rem;
+  }
   h3 {
     color: var(--secondary);
+    color: var(--orange);
+    margin-bottom: 30px;
+  }
+  .metallerie-serrurerie {
+    margin: 150px 0 30px 0;
   }
   .slider-services {
     width: 669px;
-    height: 818px;
+    height: 690px;
     @include sm {
       width: 413px;
-      height: 506px;
+      height: 440px;
     }
     position: relative;
     overflow: hidden;
@@ -30,7 +34,7 @@ h2 {
       .image {
         position: relative;
         width: 669px;
-        height: 818px;
+        height: 100%;
         @include sm {
           width: 413px;
           height: 506px;
@@ -42,26 +46,30 @@ h2 {
       }
     }
     .slider-btn {
+      margin: 0 auto;
       width: 100%;
+      height: 20px;
       position: absolute;
       bottom: 0;
       display: flex;
       justify-content: center;
+      align-items: center;
+      margin-bottom: 15%;
       li {
-        border: 2px solid white;
-        width: 25px;
-        height: 25px;
+        background: var(--orangeless);
+        width: 14px;
+        height: 14px;
         border-radius: 50%;
-        margin: 0px 15px 0px 15px;
+        margin: 0px 5px 0px 5px;
       }
       .current-dot {
-        background: red;
+        background: var(--orange);
       }
     }
     .btn-service-right {
       position: absolute;
+      right: 0;
       top: 50%;
-      left: 90%;
       width: 70px;
       height: 50px;
     }
