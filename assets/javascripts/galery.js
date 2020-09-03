@@ -1,4 +1,5 @@
 const slider = document.querySelector(".gallery");
+
 class Gallery {
   constructor(slider) {
     this.slider = slider;
@@ -11,9 +12,7 @@ class Gallery {
     let motion = false;
     let timer = null;
     let hasMove = false;
-
     let windowX = this.window.innerWidth;
-    console.log(windowX);
 
     this.btnUp.addEventListener("mousedown", (event) => {
       motion = true;
@@ -37,7 +36,6 @@ class Gallery {
 
     this.btnDown.addEventListener("mousedown", (event) => {
       if (hasMove === true) {
-        console.log(windowX);
         timer = setInterval(() => {
           let pos = this.gallery.getBoundingClientRect();
           if (pos.right > windowX) {

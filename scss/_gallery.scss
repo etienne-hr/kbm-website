@@ -3,10 +3,28 @@
   width: 100vw;
   background: var(--secondary);
   position: relative;
+  .gallery-orange-block {
+    position: absolute;
+    width: 410px;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    background: var(--orange);
+    overflow: visible;
+    h2 {
+      margin-top: 2rem;
+      width: 700px;
+      position: absolute;
+      text-overflow: ellipsis;
+      left: 72px;
+      top: 0px;
+      color: var(--primary);
+    }
+  }
   .gallery {
     position: absolute;
     height: 424px;
-    top: 0;
+    top: 20%;
     right: 0;
     .gallery-images {
       position: absolute;
