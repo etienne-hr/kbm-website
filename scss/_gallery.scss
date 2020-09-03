@@ -1,0 +1,36 @@
+.gallery-container {
+  height: 1000px;
+  width: 100vw;
+  background: var(--secondary);
+  position: relative;
+  .gallery {
+    position: absolute;
+    height: 424px;
+    top: 0;
+    right: 0;
+    .gallery-images {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      transition: cubic-bezier(0.39, 1.13, 0.99, 0.99) 0.5s all;
+      img {
+        margin: 1rem;
+      }
+    }
+    .gallery-controller {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: translateY(100%);
+      margin: 0 1rem 0 0;
+      .controller {
+        background: var(--primary);
+      }
+    }
+  }
+}
