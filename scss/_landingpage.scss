@@ -54,6 +54,9 @@
           font-weight: 500;
           font-size: 4rem;
           color: var(--secondary);
+          span {
+            background: var(--subtitle);
+          }
         }
       }
       button {

@@ -3,3 +3,29 @@
   width: 100vw;
   height: 100vh;
 }
+
+.context-slide {
+  position: absolute;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orangeless);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 20%;
+  &:hover {
+    background: var(--orange);
+    transition: ease-in 0.5s;
+  }
+  .title-service {
+    color: var(--secondary);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    font-size: 48px;
+  }
+}

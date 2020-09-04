@@ -5,7 +5,8 @@
   --orangeless: rgba(230, 120, 23, 0.52);
   --shadow-button: 4px 0px 4px rgba(0, 0, 0, 0.25),
     -4px 0px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25),
-    0px 4px 4px rgba(0, 0, 0, 0.25); }
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+  --subtitle: linear-gradient(to top, var(--orange) 40%, transparent 0); }
 
 * {
   margin: 0;
@@ -15,6 +16,29 @@
   background: var(--secondary);
   width: 100vw;
   height: 100vh; }
+
+.context-slide {
+  position: absolute;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orangeless);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 20%; }
+  .context-slide:hover {
+    background: var(--orange);
+    transition: ease-in 0.5s; }
+  .context-slide .title-service {
+    color: var(--secondary);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    font-size: 48px; }
 
 /* Landscape phones and down */
 /* Landscape phones to portrait tablet */
@@ -43,6 +67,9 @@ li {
 
 button {
   border: none; }
+
+a {
+  text-decoration: none; }
 
 .services-container {
   display: flex;
@@ -168,6 +195,8 @@ button {
           font-weight: 500;
           font-size: 4rem;
           color: var(--secondary); }
+          .landing-page .presentation .presentation-container .top-slogan p span {
+            background: var(--subtitle); }
       .landing-page .presentation .presentation-container button {
         background: var(--orange);
         box-shadow: var(--shadow-button);
@@ -206,7 +235,6 @@ button {
 
 .gallery-container {
   height: 1000px;
-  width: 100vw;
   background: var(--secondary);
   position: relative; }
   .gallery-container .gallery-orange-block {
@@ -252,8 +280,7 @@ button {
         background: var(--primary); }
 
 .container-company {
-  height: 1000px;
-  width: 100vw;
+  min-height: 1000px;
   background: var(--secondary);
   position: relative;
   display: flex;
@@ -294,6 +321,8 @@ button {
       font-weight: 500;
       font-size: 5rem;
       text-align: center; }
+      .container-company .company-center-block p span {
+        background: var(--subtitle); }
     .container-company .company-center-block .back-block-orange {
       position: absolute;
       width: 362px;
