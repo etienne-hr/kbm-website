@@ -139,6 +139,7 @@ include './includes/config/config.php';
                                 <li data-pos="1"></li>
                                 <li data-pos="2"></li>
                                 <li data-pos="3"></li>
+                                <li data-pos="4"></li>
                         </ul>
                 </div>
                 <h3> Sécurité </h3>

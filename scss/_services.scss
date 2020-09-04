@@ -22,15 +22,17 @@
   .slider-services {
     width: 669px;
     height: 690px;
+    position: relative;
+    overflow: hidden;
     @include sm {
       width: 413px;
       height: 440px;
     }
-    position: relative;
-    overflow: hidden;
     .slide {
       position: absolute;
       display: flex;
+      transition: ease-in 1s all;
+      will-change: left;
       .image {
         position: relative;
         width: 669px;

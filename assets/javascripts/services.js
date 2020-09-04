@@ -73,7 +73,7 @@ class Slider {
         this.btnRight.style.display = "none";
       }
       targetDot(this.dots, slideTarget);
-    }, 3000);
+    }, 4000);
 
     const targetDot = (dots, slidetarget) => {
       dots.forEach((dot) => {
