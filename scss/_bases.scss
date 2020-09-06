@@ -26,8 +26,23 @@ li {
 
 button {
   border: none;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  outline: none;
 }
 
 a {
   text-decoration: none;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
 }
