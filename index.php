@@ -16,6 +16,17 @@ include './includes/config/config.php';
         <!-- <?php
                 include './includes/view/header.php';
                 ?> -->
+        <div class="logo-top">
+                <img src="assets\images\logos\logokbm.png" alt="logo KBM-BATIMENT">
+        </div>
+        <div class="header-nav">
+                <ul class="container-nav">
+                        <li> Nos Services</li>
+                        <li> Notre entreprise</li>
+                        <li> Services </li>
+                        <li> Contact </li>
+                </ul>
+        </div>
         <?php
         include './includes/view/landing-page.php';
         ?>

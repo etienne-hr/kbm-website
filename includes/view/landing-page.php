@@ -1,9 +1,6 @@
 <?php
 echo '
-<div class="container-white landing-page">
-                <div class="logo-top">
-                        <img src="assets\images\logos\logokbm.png" alt="logo KBM-BATIMENT">
-                </div>
+<div class="landing-page">
                 <div class="presentation">
                         <div class="display-orange">
 
