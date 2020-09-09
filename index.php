@@ -1,6 +1,7 @@
 <?php
 include './includes/config/config.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +91,7 @@ include './includes/config/config.php';
                                         <textarea name="message"></textarea>
                                 </fieldset>
                                 <div class="g-recaptcha" data-sitekey="6LeqBsoZAAAAAKOolvW-s2BSoFwiCQN8cgetqdzh"></div>
-                                <button class="g-recaptcha" data-sitekey="6Lf-BMoZAAAAALY7w_iXov3_KU63opXeSZAql5Et" data-callback='onSubmit' data-action='submit' type="submit" name="submit">Envoyer</button>
+                                <button name="submit">Envoyer</button>
                         </form>
                 </div>
         </div>
