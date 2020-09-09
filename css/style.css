@@ -43,6 +43,9 @@
 :root {
   font-size: 62.5%; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background: var(--secondary);
   font-family: "Montserrat", sans-serif;
@@ -425,9 +428,31 @@ input {
     justify-content: space-evenly;
     flex-direction: row; }
     .header-nav .container-nav li {
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 24px;
-      letter-spacing: 0.075em;
+      position: relative;
       margin: 3rem 5rem 0 0;
-      color: var(--primary); }
+      transition: ease-in 0.5s all; }
+      .header-nav .container-nav li a {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0.075em;
+        color: var(--primary);
+        animation-duration: 1s; }
+      .header-nav .container-nav li .menu-sub {
+        position: absolute;
+        bottom: 0;
+        width: 5rem;
+        height: 0.5rem;
+        background: var(--orange);
+        z-index: -1; }
+  .header-nav .is-scroll {
+    flex-direction: column;
+    padding: 25px, 25px, 0, 0;
+    transition-duration: 3s; }
+
+@keyframes slideLeft {
+  from {
+    opacity: 1; }
+  to {
+    transform: translateX(820px);
+    opacity: 0;
+    display: none; } }

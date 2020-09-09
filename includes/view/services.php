@@ -1,6 +1,6 @@
 <?php
 echo '
-<div class="services-container">
+<div class="services-container" id="services">
 <h2> Nos Services </h2>
 <h3 class="metallerie-serrurerie"> Métallerie - Serrurerie</h3>
 <div class="slider-services slider1">

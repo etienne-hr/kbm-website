@@ -1,5 +1,5 @@
 <?php
-echo '<div class="gallery-container">
+echo '<div class="gallery-container" id="galery">
 <div class="gallery-orange-block">
         <h2>Galerie des réalisation</h2>
 </div>

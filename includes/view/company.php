@@ -1,5 +1,5 @@
 <?php
-echo ' <div class="container-company">
+echo ' <div class="container-company" id="company">
 <div class="company-orange-top"></div>
 <div class="company-center-block">
         <img src="assets\images\logos\logokbmbackground.png" alt="logo">

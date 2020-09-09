@@ -10,6 +10,7 @@ include './includes/config/config.php';
         <title>Site KBM</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -21,10 +22,18 @@ include './includes/config/config.php';
         </div>
         <div class="header-nav">
                 <ul class="container-nav">
-                        <li> Nos Services</li>
-                        <li> Notre entreprise</li>
-                        <li> Services </li>
-                        <li> Contact </li>
+                        <li>
+                                <div class="menu-sub"></div> <a href="#services">Nos Services</a>
+                        </li>
+                        <li>
+                                <div class="menu-sub"></div><a href="#company">Notre entreprise</a>
+                        </li>
+                        <li>
+                                <div class="menu-sub"></div><a href="#galery">Galerie</a>
+                        </li>
+                        <li>
+                                <div class="menu-sub"></div><a href="#contact">Contact</a>
+                        </li>
                 </ul>
         </div>
         <?php
@@ -48,7 +57,8 @@ include './includes/config/config.php';
         <!-- <?php
                 include './includes/view/footer.php';
                 ?> -->
-        <div class="form-contact-container">
+
+        <div class="form-contact-container" id="contact">
                 <h2>Votre projet</h2>
                 <div class="contact">
                         <div class="contact-p">
@@ -79,7 +89,8 @@ include './includes/config/config.php';
                                         <label>Message</label>
                                         <textarea name="message"></textarea>
                                 </fieldset>
-                                <button type="submit" name="submit">Envoyer</button>
+                                <div class="g-recaptcha" data-sitekey="6LeqBsoZAAAAAKOolvW-s2BSoFwiCQN8cgetqdzh"></div>
+                                <button class="g-recaptcha" data-sitekey="6Lf-BMoZAAAAALY7w_iXov3_KU63opXeSZAql5Et" data-callback='onSubmit' data-action='submit' type="submit" name="submit">Envoyer</button>
                         </form>
                 </div>
         </div>
