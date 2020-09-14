@@ -11,7 +11,6 @@ include './includes/config/config.php';
         <title>Site KBM</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -97,6 +96,7 @@ include './includes/config/config.php';
         </div>
 
 
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="index.js"></script>
         <script src="assets/javascripts/services.js"></script>
         <script src="assets/javascripts/galery.js"></script>
