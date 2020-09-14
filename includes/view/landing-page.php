@@ -10,7 +10,7 @@ echo '
                                         <p>Le spécialiste alsacien de la <span>métallerie</span></p>
                                 </div>
                                 <img src="assets\images\pictures\pic-presentation.png" alt="photo de présentation">
-                                <button>Prendre contact</button>
+                                <a href="#contact"><button>Prendre contact</button></a>
                         </div>
                 </div>
         </div>';

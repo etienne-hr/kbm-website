@@ -351,6 +351,8 @@ input {
     align-items: center;
     flex-direction: column;
     margin-top: 10%; }
+    .form-contact-container .contact .message-error {
+      color: red; }
     .form-contact-container .contact .contact-p {
       display: flex;
       justify-content: flex-start;

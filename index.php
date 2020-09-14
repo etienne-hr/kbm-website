@@ -1,6 +1,9 @@
 <?php
 include './includes/config/config.php';
 ?>
+<?php
+include './includes/config/form-handler.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,30 +67,33 @@ include './includes/config/config.php';
                         <div class="contact-p">
                                 <p>Contactez-nous</p>
                         </div>
-                        <form class="contact-form" action="includes/config/form-handler.php" method="post">
+                        <?php foreach ($errorMessages as $_message) : ?>
+                                <div class="message-error"><?= $_message ?></div>
+                        <?php endforeach ?>
+                        <form class="contact-form" action="#" method="post">
                                 <fieldset>
 
                                         <label>Prénom</label>
-                                        <input type="text" name="name">
+                                        <input type="text" name="name" value="<?= $name ?>">
                                 </fieldset>
                                 <fieldset>
 
                                         <label>Nom</label>
-                                        <input type="text" name="lastname">
+                                        <input type="text" name="lastname" value="<?= $lastname ?>">
                                 </fieldset>
                                 <fieldset>
 
                                         <label>Votre E-mail</label>
-                                        <input type="text" name="mail">
+                                        <input type="text" name="mail" value="<?= $mailFrom ?>">
                                 </fieldset>
                                 <fieldset>
                                         <label>Sujet</label>
-                                        <input type="text" name="subject">
+                                        <input type="text" name="subject" value="<?= $subject ?>">
 
                                 </fieldset>
                                 <fieldset>
                                         <label>Message</label>
-                                        <textarea name="message"></textarea>
+                                        <textarea name="message"><?= $message ?></textarea>
                                 </fieldset>
                                 <div class="g-recaptcha" data-sitekey="6LeqBsoZAAAAAKOolvW-s2BSoFwiCQN8cgetqdzh"></div>
                                 <button name="submit">Envoyer</button>
@@ -98,6 +104,7 @@ include './includes/config/config.php';
 
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="index.js"></script>
+        <script src="assets\javascripts\contact.js"></script>
         <script src="assets/javascripts/services.js"></script>
         <script src="assets/javascripts/galery.js"></script>
 </body>

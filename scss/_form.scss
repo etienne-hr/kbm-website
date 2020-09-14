@@ -12,6 +12,9 @@
     align-items: center;
     flex-direction: column;
     margin-top: 10%;
+    .message-error {
+      color: red;
+    }
     .contact-p {
       display: flex;
       justify-content: flex-start;
