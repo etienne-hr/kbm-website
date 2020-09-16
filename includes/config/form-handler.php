@@ -5,6 +5,7 @@ $lastname = "";
 $mailFrom = "";
 $subject = "";
 $message = "";
+$mailTo = "etienneh.68@gmail.com";
 
 //recaptcha
 $public_key = "6LeqBsoZAAAAAKOolvW-s2BSoFwiCQN8cgetqdzh";
@@ -57,19 +58,15 @@ if (array_key_exists('submit', $_POST)) {
         }
     }
 
-    $mailTo = "etienneh.68@gmail.com";
-
-
     if (empty($errorMessages) && $formValid === true) {
 
         $txt = "Vous avez eu un message de :" . " " . $name . " " . $lastname . "\n Mail :" . $mailFrom . "\n\n" . $message;
 
         if (mail($mailTo, $subject, $txt, $headers)) {
-            header('Location: http://localhost/kbm-website/');
-            echo "Email successfully sent to $mailTo...";
+            // header('Location: http://localhost/kbm-website/');
+            $successMessages[] = "Email envoyé avec succès !";
         } else {
-            echo "Email sending failed...";
+            $errorMessages[] = "ERREUR: Imossible d'envoyer votre message";
         };
-    } else {
     }
 }

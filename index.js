@@ -20,10 +20,14 @@ class Menu {
         this.menu.classList.remove("is-scroll");
         this.link.forEach((element) => {
           element.style.display = "block";
-          //   this.menu.style.flexDirection = "row";
         });
       }
-
+      if (scrollY === 0) {
+        console.log("cc");
+        this.link.forEach((element) => {
+          element.style.backgroundColor = "transparent";
+        });
+      }
       isClick = false;
     });
 

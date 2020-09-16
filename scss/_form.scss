@@ -16,6 +16,12 @@
       color: red;
       font-size: 24px;
     }
+    .message-success {
+      color: green;
+      font-size: 24px;
+      letter-spacing: 0.11em;
+      margin: 1rem 0 1rem 0;
+    }
     .contact-p {
       display: flex;
       justify-content: flex-start;
@@ -83,8 +89,5 @@
     left: 72px;
     top: 0;
     margin: 5rem 0 0 3rem;
-  }
-  .g-recaptcha {
-    // margin-left: 200px;
   }
 }

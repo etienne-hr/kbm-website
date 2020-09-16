@@ -70,9 +70,11 @@ include './includes/config/form-handler.php';
                         <?php foreach ($errorMessages as $_message) : ?>
                                 <div class="message-error"><?= $_message ?></div>
                         <?php endforeach ?>
+                        <?php foreach ($successMessages as $_message) : ?>
+                                <div class="message-success"><?= $_message ?></div>
+                        <?php endforeach ?>
                         <form class="contact-form" action="#" method="post">
                                 <fieldset>
-
                                         <label>Prénom</label>
                                         <input type="text" name="name" value="<?= $name ?>">
                                 </fieldset>

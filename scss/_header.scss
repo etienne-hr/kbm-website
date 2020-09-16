@@ -34,9 +34,9 @@
       }
       .menu-sub {
         position: absolute;
-        bottom: 0;
+        bottom: 1px;
         width: 5rem;
-        height: 0.5rem;
+        height: 0.75rem;
         background: var(--orange);
         z-index: -1;
       }
@@ -44,8 +44,8 @@
   }
   .is-scroll {
     flex-direction: column;
-    padding: 25px, 25px, 0, 0;
-    transition-duration: 3s;
+    padding: 25px 25px 0 0;
+    transition-duration: 1s;
   }
 }
 

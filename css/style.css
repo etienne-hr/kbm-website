@@ -197,7 +197,9 @@ input {
         margin-left: 1%; }
         .landing-page .presentation .presentation-container .top-slogan p {
           font-weight: 500;
-          font-size: 4rem;
+          font-family: Montserrat;
+          font-size: 7rem;
+          letter-spacing: -0.015em;
           color: var(--secondary); }
           .landing-page .presentation .presentation-container .top-slogan p span {
             background: var(--subtitle); }
@@ -354,6 +356,11 @@ input {
     .form-contact-container .contact .message-error {
       color: red;
       font-size: 24px; }
+    .form-contact-container .contact .message-success {
+      color: green;
+      font-size: 24px;
+      letter-spacing: 0.11em;
+      margin: 1rem 0 1rem 0; }
     .form-contact-container .contact .contact-p {
       display: flex;
       justify-content: flex-start;
@@ -444,15 +451,15 @@ input {
         animation-duration: 1s; }
       .header-nav .container-nav li .menu-sub {
         position: absolute;
-        bottom: 0;
+        bottom: 1px;
         width: 5rem;
-        height: 0.5rem;
+        height: 0.75rem;
         background: var(--orange);
         z-index: -1; }
   .header-nav .is-scroll {
     flex-direction: column;
-    padding: 25px, 25px, 0, 0;
-    transition-duration: 3s; }
+    padding: 25px 25px 0 0;
+    transition-duration: 1s; }
 
 @keyframes slideLeft {
   from {

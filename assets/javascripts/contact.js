@@ -1,17 +1,26 @@
 const errorForm = document.querySelector(".message-error");
-const btnForm = document.querySelector(".contact-form");
+const validateForm = document.querySelector(".message-success");
 const inputForm = document.querySelectorAll(".contact-form input");
 const textareaForm = document.querySelector(".contact-form textarea");
 
 window.addEventListener("load", (event) => {
   if (errorForm != null) {
-    autoScroll();
+    autoScroll(errorForm);
     borderRed();
+  }
+  if (validateForm != null) {
+    autoScroll(validateForm);
+    inputForm.forEach((input) => {
+      input.value = "";
+      input.style.border = "none";
+    });
+    textareaForm.value = "";
+    textareaForm.style.border = "none";
   }
 });
 
-const autoScroll = () => {
-  errorForm.scrollIntoView({
+const autoScroll = (form) => {
+  form.scrollIntoView({
     behavior: "instant",
     block: "start",
     inline: "nearest",
