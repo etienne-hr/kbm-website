@@ -36,6 +36,15 @@
     letter-spacing: 0.06em;
     font-size: 48px; }
 
+.reverse-title {
+  font-size: 2.75rem;
+  letter-spacing: 0.11em;
+  color: var(--secondary);
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 0;
+  margin-left: 2rem; }
+
 /* Landscape phones and down */
 /* Landscape phones to portrait tablet */
 /* Portrait tablet to landscape and desktop */
@@ -299,6 +308,14 @@ input {
     left: 89px;
     top: 0px;
     background: var(--orange); }
+    .container-company .company-orange-top h2 {
+      margin-top: 2rem;
+      position: absolute;
+      text-overflow: ellipsis;
+      left: 3rem;
+      top: 2rem;
+      letter-spacing: -0.015em;
+      color: var(--secondary); }
   .container-company .company-center-block {
     width: 908px;
     height: 502px;
@@ -508,3 +525,41 @@ footer {
     flex-direction: column; }
     footer .footer-right p {
       margin: 1rem; }
+
+.container-material {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 0 10rem 0; }
+  .container-material .reverse-title {
+    color: var(--primary); }
+  .container-material h4 {
+    position: relative;
+    font-weight: bold;
+    font-size: 96px;
+    letter-spacing: -0.015em;
+    z-index: 1;
+    margin: 1.5rem; }
+    .container-material h4 .sub-title-material {
+      position: absolute;
+      background: var(--orange);
+      bottom: 1rem;
+      right: 0;
+      width: 15rem;
+      height: 3rem;
+      z-index: -1; }
+
+.provider-container {
+  background: var(--primary);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 524px; }
+  .provider-container .provider-img {
+    width: 160px;
+    height: 155px;
+    margin: 5rem; }
+    .provider-container .provider-img img {
+      width: 100%; }

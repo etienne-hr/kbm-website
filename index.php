@@ -32,32 +32,29 @@ include './includes/config/form-handler.php';
         <?php
         include './includes/view/gallery.php';
         ?>
+        <div class="provider-container">
+                <h3 class="reverse-title">Fournisseurs</h3>
+                <a class="provider-img" href="https://www.came.com/fr/"><img src="assets\images\logos\came.png" alt="came logo"></a>
+                <a class="provider-img" href="https://faac.fr/"><img src="assets\images\logos\faac.png" alt="faac logo"></a>
+        </div>
+        <div class="container-material">
+                <h3 class="reverse-title">Matériaux</h3>
+                <h4>MÉTAL <div class="sub-title-material"></div></h4>
+                <h4>ACIER <div class="sub-title-material"></div></h4>
+                <h4>ALUMINIUM <div class="sub-title-material"></div></h4>
+                <h4>COMPOSITE <div class="sub-title-material"></div></h4>
+        </div>
+        
         <!-- <?php
                 include './includes/view/provider.php';
                 ?> -->
         <?php
                 include './includes/view/form.php';
                 ?>
-        <!-- <?php
+        <?php
                 include './includes/view/footer.php';
-                ?> -->
-        <footer>
-                <div class="footer-left">
-                        <div class="footer-img"><img src="assets\images\logos\logokbm.png" alt="logo"></div>
-                        <p>©KBM BATIMENT</p>
-                </div>
-                <div class="footer-center">
-                        <p>kbmbatiment@orange.fr</p>
-                </div>
-                <div class="footer-right">
-                        <p>2 rue des Flandres</p>
-                        <p>68100 Mulhouse</p>
-                        <p>03 89 65 10 63</p>
-                </div>
-        </footer>
-
+                ?>
         
-
 
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="index.js"></script>
