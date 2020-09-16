@@ -7,15 +7,18 @@ window.addEventListener("load", (event) => {
   if (errorForm != null) {
     autoScroll(errorForm);
     borderRed();
+    console.log("grosse pute");
   }
   if (validateForm != null) {
     autoScroll(validateForm);
     inputForm.forEach((input) => {
       input.value = "";
       input.style.border = "none";
+      console.log("grosse pd");
     });
     textareaForm.value = "";
     textareaForm.style.border = "none";
+    console.log("baise bien ta meere");
   }
 });
 
