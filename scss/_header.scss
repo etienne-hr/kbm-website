@@ -34,11 +34,12 @@
       }
       .menu-sub {
         position: absolute;
-        bottom: 1px;
+        bottom: 0.25px;
         width: 5rem;
         height: 0.75rem;
         background: var(--orange);
         z-index: -1;
+        transition: ease-in 0.25s;
       }
     }
   }

@@ -6,7 +6,21 @@ class Menu {
     this.document = document;
     this.link = this.menu.querySelectorAll("li a");
     this.line = this.menu.querySelectorAll("li");
+    this.menu.querySelectorAll("li .menu-sub");
+
     let isClick = false;
+
+    this.line.forEach((element) => {
+      let hoverA = element.querySelector("li a");
+      let subTitle = element.querySelector("li .menu-sub");
+      hoverA.addEventListener("mouseover", () => {
+        subTitle.style.width = 100 + "%";
+      });
+      hoverA.addEventListener("mouseout", () => {
+        subTitle.style.width = 5 + "rem";
+      });
+    });
+
     document.addEventListener("scroll", (event) => {
       if (scrollY > 0 && isClick === false) {
         this.menu.classList.add("is-scroll");
@@ -23,7 +37,6 @@ class Menu {
         });
       }
       if (scrollY === 0) {
-        console.log("cc");
         this.link.forEach((element) => {
           element.style.backgroundColor = "transparent";
         });

@@ -451,11 +451,12 @@ input {
         animation-duration: 1s; }
       .header-nav .container-nav li .menu-sub {
         position: absolute;
-        bottom: 1px;
+        bottom: 0.25px;
         width: 5rem;
         height: 0.75rem;
         background: var(--orange);
-        z-index: -1; }
+        z-index: -1;
+        transition: ease-in 0.25s; }
   .header-nav .is-scroll {
     flex-direction: column;
     padding: 25px 25px 0 0;
