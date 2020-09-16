@@ -352,7 +352,8 @@ input {
     flex-direction: column;
     margin-top: 10%; }
     .form-contact-container .contact .message-error {
-      color: red; }
+      color: red;
+      font-size: 24px; }
     .form-contact-container .contact .contact-p {
       display: flex;
       justify-content: flex-start;
@@ -372,6 +373,8 @@ input {
       width: 884px;
       height: 947px;
       background: var(--orange); }
+      .form-contact-container .contact .contact-form .g-recaptcha {
+        padding-left: 10rem; }
       .form-contact-container .contact .contact-form fieldset {
         display: flex;
         justify-content: flex-start;

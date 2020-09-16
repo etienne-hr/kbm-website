@@ -16,7 +16,7 @@ $url = "https://www.google.com/recaptcha/api/siteverify";
 if (array_key_exists('submit', $_POST)) {
     //Mail
     if (empty($_POST['name'])) {
-        $errorMessages[] = "Veuillez resnigner votre prénom";
+        $errorMessages[] = "Veuillez renseigner votre prénom";
     } else {
         $name = $_POST['name'];
     }

@@ -14,6 +14,7 @@
     margin-top: 10%;
     .message-error {
       color: red;
+      font-size: 24px;
     }
     .contact-p {
       display: flex;
@@ -37,6 +38,9 @@
       width: 884px;
       height: 947px;
       background: var(--orange);
+      .g-recaptcha {
+        padding-left: 10rem;
+      }
       fieldset {
         display: flex;
         justify-content: flex-start;

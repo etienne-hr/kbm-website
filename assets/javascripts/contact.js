@@ -1,19 +1,30 @@
 const errorForm = document.querySelector(".message-error");
-// const btnForm = document.querySelector(".contact-form");
-
-// btnForm.addEventListener("click", (event) => {
-//   if (errorForm != null) {
-//     // btnForm.preventDefault();
-//     console.log("cc");
-//   }
-// });
+const btnForm = document.querySelector(".contact-form");
+const inputForm = document.querySelectorAll(".contact-form input");
+const textareaForm = document.querySelector(".contact-form textarea");
 
 window.addEventListener("load", (event) => {
   if (errorForm != null) {
-    errorForm.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
+    autoScroll();
+    borderRed();
   }
 });
+
+const autoScroll = () => {
+  errorForm.scrollIntoView({
+    behavior: "instant",
+    block: "start",
+    inline: "nearest",
+  });
+};
+
+const borderRed = () => {
+  inputForm.forEach((input) => {
+    if (input.value === "") {
+      input.style.border = "3px solid red";
+    }
+  });
+  if (textareaForm.value === "") {
+    textareaForm.style.border = "3px solid red";
+  }
+};
