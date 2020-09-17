@@ -7,7 +7,7 @@ echo '
         <div class="slide">
                 <div class="image">
                         <img src="assets\images\metallerie\photo1.png" alt="Escaliers">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Escaliers</span> </a>
+                        <a class="context-slide" href="./scale.php?folder=metallerie"><span class="title-service">Escaliers</span> </a>
                 </div>
                 <div class="image">
                         <img src="assets\images\metallerie\photo2.png" alt="Gardes corps">
