@@ -6,36 +6,35 @@ echo '
 <div class="slider-services slider1">
 <div class="slide">
                 <div class="image">
-                        <img src="assets\images\metallerie\escalier.png" alt="Escaliers">
-                        <a class="context-slide" href="./newgallery.php?folder=escaliers"><span class="title-service">Escaliers</span> </a>
+                        <a href="./newgallery.php?folder=escaliers"><img src="assets\images\metallerie\escalier.png" alt="Escaliers"></a>
+                        <p class="context-slide"><span class="title-service">Escaliers</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\gc.png" alt="Gardes corps">
-                        <a class="context-slide" href="./newgallery.php?folder=gardes-corps"><span class="title-service">Gardes Corps</span> </a>
+                        <a href="./newgallery.php?folder=gardes-corps"> <img src="assets\images\metallerie\gc.png" alt="Gardes corps"></a>
+                        <p class="context-slide" "><span class="title-service">Gardes Corps</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\auvent.png" alt="Auvent">
-                        <a class="context-slide" href="./newgallery.php?folder=auvent"><span class="title-service">Auvent</span> </a>
+                        <a href="./newgallery.php?folder=auvent"> <img src="assets\images\metallerie\auvent.png" alt="Auvent"></a>
+                        <p class="context-slide"><span class="title-service">Auvent</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\cloture.png" alt="Portails/Clotures">
-                        <a class="context-slide" href="./newgallery.php?folder=portails-clotures"><span class="title-service">Portails et clotures</span> </a>
+                <a href="./newgallery.php?folder=portails-clotures"><img src="assets\images\metallerie\cloture.png" alt="Portails/Clotures"></a>
+                        <p class="context-slide" ><span class="title-service">Portails et clotures</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\charpente.png" alt="Charpentes">
-                        <a class="context-slide" href="./newgallery.php?folder=charpentes"><span class="title-service">Charpentes</span> </a>
+                <a href="./newgallery.php?folder=charpentes"> <img src="assets\images\metallerie\charpente.png" alt="Charpentes"></a>
+                        <p class="context-slide"><span class="title-service">Charpentes</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\acces.png" alt="Portes et controle accès">
-                        <a class="context-slide" href="./newgallery.php?folder=portes"><span class="title-service">Portes/controle accès</span> </a>
-
+                        <a href="./newgallery.php?folder=portes"><img src="assets\images\metallerie\acces.png" alt="Portes et controle accès"></a>
+                        <p class="context-slide"><span class="title-service">Portes/controle accès</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\vitre.png" alt="Baie vitrée">
-                        <a class="context-slide" href="./newgallery.php?folder=vitres"><span class="title-service">Baie vitrée</span> </a>
+                        <a href="./newgallery.php?folder=vitres"> <img src="assets\images\metallerie\vitre.png" alt="Baie vitrée"></a>
+                        <p class="context-slide"><span class="title-service">Baie vitrée</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\surmesure.png" alt="Sur-mesure">
+                        <a href="./newgallery.php?folder=auvent"> <img src="assets\images\metallerie\surmesure.png" alt="Sur-mesure"></a>
                         <a class="context-slide" href="http://google.com"><span class="title-service">Sur-mesure</span> </a>
                 </div>
                 <div class="image">

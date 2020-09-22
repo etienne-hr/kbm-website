@@ -20,15 +20,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--orangeless);
+  background: var(--orange);
   width: 100%;
   top: 0;
   left: 0;
   height: 20%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-  .context-slide:hover {
-    background: var(--orange);
-    transition: ease-in 0.5s; }
   .context-slide .title-service {
     color: var(--secondary);
     text-align: center;
@@ -134,6 +131,12 @@ input {
         .services-container .slider-services .slide .image img {
           max-width: 100%;
           max-height: auto; }
+          .services-container .slider-services .slide .image img:hover {
+            filter: blur(3px);
+            opacity: 0.75;
+            transform: scale(0.99);
+            box-shadow: none;
+            transition: all 0.5s ease-out; }
     .services-container .slider-services .slider-btn {
       margin: 0 auto;
       width: 100%;
