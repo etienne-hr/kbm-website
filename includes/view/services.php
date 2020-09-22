@@ -4,38 +4,47 @@ echo '
 <h2> Nos Services </h2>
 <h3 class="metallerie-serrurerie"> Métallerie - Serrurerie</h3>
 <div class="slider-services slider1">
-        <div class="slide">
+<div class="slide">
                 <div class="image">
-                        <img src="assets\images\metallerie\photo1.png" alt="Escaliers">
-                        <a class="context-slide" href="./scale.php?folder=metallerie"><span class="title-service">Escaliers</span> </a>
+                        <img src="assets\images\metallerie\escalier.png" alt="Escaliers">
+                        <a class="context-slide" href="./newgallery.php?folder=escaliers"><span class="title-service">Escaliers</span> </a>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\photo2.png" alt="Gardes corps">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Gardes corps</span> </a>
+                        <img src="assets\images\metallerie\gc.png" alt="Gardes corps">
+                        <a class="context-slide" href="./newgallery.php?folder=gardes-corps"><span class="title-service">Gardes Corps</span> </a>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\photo3.png" alt="Portails">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Portails</span> </a>
+                        <img src="assets\images\metallerie\auvent.png" alt="Auvent">
+                        <a class="context-slide" href="./newgallery.php?folder=auvent"><span class="title-service">Auvent</span> </a>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\photo4.png" alt="Charpentes">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Charpentes</span> </a>
+                        <img src="assets\images\metallerie\cloture.png" alt="Portails/Clotures">
+                        <a class="context-slide" href="./newgallery.php?folder=portails-clotures"><span class="title-service">Portails et clotures</span> </a>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\photo5.png" alt="Portes">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Portes</span> </a>
+                        <img src="assets\images\metallerie\charpente.png" alt="Charpentes">
+                        <a class="context-slide" href="./newgallery.php?folder=charpentes"><span class="title-service">Charpentes</span> </a>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\photo6.png" alt="Montage">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Montage</span> </a>
+                        <img src="assets\images\metallerie\acces.png" alt="Portes et controle accès">
+                        <a class="context-slide" href="./newgallery.php?folder=portes"><span class="title-service">Portes/controle accès</span> </a>
+
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\photo7.png" alt="Maintenance">
+                        <img src="assets\images\metallerie\vitre.png" alt="Baie vitrée">
+                        <a class="context-slide" href="./newgallery.php?folder=vitres"><span class="title-service">Baie vitrée</span> </a>
+                </div>
+                <div class="image">
+                        <img src="assets\images\metallerie\surmesure.png" alt="Sur-mesure">
+                        <a class="context-slide" href="http://google.com"><span class="title-service">Sur-mesure</span> </a>
+                </div>
+                <div class="image">
+                        <img src="assets\images\metallerie\charpente.png" alt="Maintenance">
                         <a class="context-slide" href="http://google.com"><span class="title-service">Maintenance</span> </a>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\photo8.png" alt="Escalier">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Escalier</span> </a>
+                        <img src="assets\images\metallerie\acces.png" alt="Montage">
+                        <a class="context-slide" href="http://google.com"><span class="title-service">Montage</span> </a>
                 </div>
         </div>
         <div class="btn-service-right">
@@ -59,6 +68,8 @@ echo '
                 <li data-pos="5"></li>
                 <li data-pos="6"></li>
                 <li data-pos="7"></li>
+                <li data-pos="8"></li>
+                <li data-pos="9"></li>
         </ul>
 </div>
 <h3> Automatisme </h3>
@@ -73,7 +84,7 @@ echo '
                         <a class="context-slide" href="http://google.com"><span class="title-service">Bâtiment</span> </a>
                 </div>
                 <div class="image">
-                        <img src="assets\images\automatisme\photo3.png" alt="Indus">
+                        <img src="assets\images\automatisme\photo3.png" alt="Industriel">
                         <a class="context-slide" href="http://google.com"><span class="title-service">Indus</span> </a>
                 </div>
                 <div class="image">
