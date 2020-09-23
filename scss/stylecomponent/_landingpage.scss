@@ -8,7 +8,6 @@
     min-height: 700px;
   }
   @include sm {
-    // height: 70vh;
     min-height: 630px;
   }
   @include xs {

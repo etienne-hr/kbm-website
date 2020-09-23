@@ -11,6 +11,9 @@
     left: 72px;
     top: 0;
     margin: 5rem 0 0 3rem;
+    @include xs {
+      left: 30px;
+    }
   }
   h3 {
     color: var(--secondary);
@@ -19,6 +22,9 @@
   }
   .metallerie-serrurerie {
     margin: 150px 0 30px 0;
+    @include xs {
+      margin: 100px 0 30px 0;
+    }
   }
   .slider-services {
     width: 669px;
@@ -28,6 +34,10 @@
     @include sm {
       width: 413px;
       height: 440px;
+    }
+    @include xs {
+      width: 270px;
+      height: 350px;
     }
     .slide {
       position: absolute;
@@ -39,7 +49,11 @@
         height: 100%;
         @include sm {
           width: 413px;
-          height: 506px;
+          height: 440px;
+        }
+        @include xs {
+          width: 270px;
+          height: 350px;
         }
         .discover {
           opacity: 0;
@@ -54,6 +68,14 @@
           letter-spacing: 0.5rem;
           z-index: 9999;
           pointer-events: none;
+          @include sm {
+            font-size: 32px;
+            top: 40%;
+          }
+          @include xs {
+            font-size: 24px;
+            top: 40%;
+          }
         }
         img {
           max-width: 100%;
@@ -78,6 +100,9 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 15%;
+      @include xs {
+        bottom: 5rem;
+      }
       li {
         background: var(--orangeless);
         width: 14px;
@@ -93,15 +118,37 @@
       position: absolute;
       right: 0;
       top: 50%;
-      width: 70px;
-      height: 50px;
+      @include xs {
+        top: 35%;
+      }
+      svg {
+        @include sm {
+          width: 45px;
+          height: 45px;
+        }
+        @include xs {
+          width: 35px;
+          height: 36px;
+        }
+      }
     }
     .btn-service-left {
       position: absolute;
       left: 0;
-      width: 70px;
-      height: 50px;
       top: 50%;
+      @include xs {
+        top: 35%;
+      }
+      svg {
+        @include sm {
+          width: 45px;
+          height: 45px;
+        }
+        @include xs {
+          width: 35px;
+          height: 36px;
+        }
+      }
     }
   }
 }
