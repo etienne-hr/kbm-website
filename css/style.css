@@ -333,9 +333,15 @@ input {
           display: none; } }
 
 .gallery-container {
-  height: 800px;
+  min-height: 800px;
   background: var(--secondary);
   position: relative; }
+  @media (max-width: 767px) {
+    .gallery-container {
+      min-height: 700px; } }
+  @media (max-width: 480px) {
+    .gallery-container {
+      min-height: 500px; } }
   .gallery-container .gallery-orange-block {
     position: absolute;
     width: 410px;
@@ -344,6 +350,12 @@ input {
     top: 0px;
     background: var(--orange);
     overflow: visible; }
+    @media (max-width: 767px) {
+      .gallery-container .gallery-orange-block {
+        width: 300px; } }
+    @media (max-width: 480px) {
+      .gallery-container .gallery-orange-block {
+        width: 100vw; } }
     .gallery-container .gallery-orange-block h2 {
       margin-top: 2rem;
       width: 720px;
@@ -352,11 +364,23 @@ input {
       left: 72px;
       top: 0px;
       color: var(--primary); }
+      @media (max-width: 767px) {
+        .gallery-container .gallery-orange-block h2 {
+          width: 330px; } }
+      @media (max-width: 480px) {
+        .gallery-container .gallery-orange-block h2 {
+          min-height: 330px; } }
   .gallery-container .gallery {
     position: absolute;
     height: 424px;
     top: 20%;
     right: 0; }
+    @media (max-width: 767px) {
+      .gallery-container .gallery {
+        top: 30%; } }
+    @media (max-width: 480px) {
+      .gallery-container .gallery {
+        top: 40%; } }
     .gallery-container .gallery .gallery-images {
       position: absolute;
       top: 0;
@@ -366,6 +390,15 @@ input {
       transition: cubic-bezier(0.39, 1.13, 0.99, 0.99) 0.5s all; }
       .gallery-container .gallery .gallery-images img {
         margin: 1rem; }
+        @media (max-width: 767px) {
+          .gallery-container .gallery .gallery-images img {
+            width: 300px;
+            height: 300px; } }
+        @media (max-width: 480px) {
+          .gallery-container .gallery .gallery-images img {
+            margin: 0.5rem;
+            width: 150px;
+            height: 150px; } }
     .gallery-container .gallery .gallery-controller {
       position: absolute;
       bottom: 0;
@@ -375,6 +408,12 @@ input {
       justify-content: center;
       transform: translateY(100%);
       margin: 0 1rem 0 0; }
+      @media (max-width: 767px) {
+        .gallery-container .gallery .gallery-controller {
+          bottom: 25%; } }
+      @media (max-width: 480px) {
+        .gallery-container .gallery .gallery-controller {
+          bottom: 60%; } }
       .gallery-container .gallery .gallery-controller .controller {
         background: var(--primary); }
 

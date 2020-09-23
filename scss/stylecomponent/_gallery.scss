@@ -1,7 +1,13 @@
 .gallery-container {
-  height: 800px;
+  min-height: 800px;
   background: var(--secondary);
   position: relative;
+  @include sm {
+    min-height: 700px;
+  }
+  @include xs {
+    min-height: 500px;
+  }
   .gallery-orange-block {
     position: absolute;
     width: 410px;
@@ -10,6 +16,12 @@
     top: 0px;
     background: var(--orange);
     overflow: visible;
+    @include sm {
+      width: 300px;
+    }
+    @include xs {
+      width: 100vw;
+    }
     h2 {
       margin-top: 2rem;
       width: 720px;
@@ -18,6 +30,12 @@
       left: 72px;
       top: 0px;
       color: var(--primary);
+      @include sm {
+        width: 330px;
+      }
+      @include xs {
+        min-height: 330px;
+      }
     }
   }
   .gallery {
@@ -25,6 +43,12 @@
     height: 424px;
     top: 20%;
     right: 0;
+    @include sm {
+      top: 30%;
+    }
+    @include xs {
+      top: 40%;
+    }
     .gallery-images {
       position: absolute;
       top: 0;
@@ -34,6 +58,15 @@
       transition: cubic-bezier(0.39, 1.13, 0.99, 0.99) 0.5s all;
       img {
         margin: 1rem;
+        @include sm {
+          width: 300px;
+          height: 300px;
+        }
+        @include xs {
+          margin: 0.5rem;
+          width: 150px;
+          height: 150px;
+        }
       }
     }
     .gallery-controller {
@@ -45,6 +78,12 @@
       justify-content: center;
       transform: translateY(100%);
       margin: 0 1rem 0 0;
+      @include sm {
+        bottom: 25%;
+      }
+      @include xs {
+        bottom: 60%;
+      }
       .controller {
         background: var(--primary);
       }

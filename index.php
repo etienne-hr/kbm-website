@@ -29,13 +29,13 @@ include './includes/config/form-handler.php';
         <?php
         include './includes/view/gallery.php';
         ?>
-        <?php
+        <!-- <?php
         include './includes/view/company.php';
-        ?>
+        ?> -->
         <?php
         include './includes/view/material.php';
         ?>
-                <div class="form-contact-container" id="contact">
+                <!-- <div class="form-contact-container" id="contact">
                 <h2>Votre projet</h2>
                 <div class="contact">
                         <div class="contact-p">
@@ -75,7 +75,7 @@ include './includes/config/form-handler.php';
                                 <button name="submit">Envoyer</button>
                         </form>
                 </div>
-        </div>
+        </div> -->
         <?php
                 include './includes/view/footer.php';
                 ?>
