@@ -1,3 +1,4 @@
+//header navigation
 const nav = document.querySelector(".container-nav");
 
 class Menu {
@@ -60,8 +61,6 @@ const scrollMenu = new Menu(nav);
 //Hover on the image of the first slider
 const hoverFirstSlider = document.querySelectorAll(".slider1 .is-linked");
 const discover = document.querySelectorAll(".slider1 .discover");
-console.log(discover);
-console.log(hoverFirstSlider);
 
 hoverFirstSlider.forEach((element) => {
   element.addEventListener("mouseover", (event) => {
@@ -75,3 +74,19 @@ hoverFirstSlider.forEach((element) => {
     });
   });
 });
+
+//animation
+
+// const displayOrange = document.querySelector(".landing-page .display-orange");
+// document.addEventListener("scroll", (event) => {
+//   console.log(scrollY);
+//   if (scrollY > 0) {
+//     displayOrange.style.animationName = "motionDisplayBottom";
+//     displayOrange.style.animationDuration = 2 + "s";
+//     displayOrange.style.animationIterationCount = 1;
+//     displayOrange.style.animationMode = "auto";
+//   }
+//   if (scrollY < 200) {
+//     // displayOrange.style.animationName = "motionDisplayTop";
+//   }
+// });

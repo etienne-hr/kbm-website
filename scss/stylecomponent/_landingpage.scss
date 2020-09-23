@@ -1,21 +1,18 @@
 .landing-page {
   position: relative;
-  min-height: 1000px;
-  max-height: 100vh;
-  @include xs {
-    min-height: 420px;
-    width: 100vw;
+  min-height: 950px;
+  @include xl {
+    padding-left: 10%;
+  }
+  @include md {
+    min-height: 700px;
   }
   @include sm {
     // height: 70vh;
-    max-height: 650px;
-    width: 100vw;
+    min-height: 630px;
   }
-  @include md {
-    max-height: 700px;
-  }
-  @include xl {
-    padding-left: 10%;
+  @include xs {
+    min-height: 490px;
   }
   .presentation {
     position: absolute;
@@ -44,6 +41,12 @@
           font-size: 7rem;
           letter-spacing: -0.015em;
           color: var(--secondary);
+          @include sm {
+            font-size: 4.5rem;
+          }
+          @include xs {
+            font-size: 3rem;
+          }
           span {
             background: var(--subtitle);
           }
@@ -61,17 +64,17 @@
         margin-bottom: 3rem;
         color: var(--secondary);
         font-size: 2rem;
-        &:hover {
-          // background: green;
-        }
-        @include xs {
-          bottom: -15rem;
-          width: 125px;
-          height: 50px;
-        }
         @include sm {
+          bottom: -12rem;
           width: 35%;
           height: 15%;
+          font-size: 1.75rem;
+        }
+        @include xs {
+          bottom: -10rem;
+          width: 125px;
+          height: 50px;
+          font-size: 1.25rem;
         }
       }
     }
@@ -83,6 +86,7 @@
       top: -5rem;
       right: -5rem;
       z-index: -1;
+
       @include xs {
         display: none;
       }
@@ -92,3 +96,18 @@
     }
   }
 }
+
+// @keyframes motionDisplayBottom {
+//   from {
+//   }
+//   to {
+//     top: 180px;
+//   }
+// }
+// @keyframes motionDisplayTop {
+//   from {
+//   }
+//   to {
+//     top: -5rem;
+//   }
+// }

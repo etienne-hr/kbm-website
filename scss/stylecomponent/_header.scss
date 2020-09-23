@@ -25,12 +25,24 @@
       position: relative;
       margin: 3rem 5rem 0 0;
       transition: ease-in 0.5s all;
+      @include md {
+        margin: 3rem 3rem 0 0;
+      }
+      @include sm {
+        margin: 7.5rem 3rem 0 0;
+      }
       a {
         font-weight: 600;
         font-size: 20px;
         letter-spacing: 0.075em;
         color: var(--primary);
         animation-duration: 1s;
+        @include md {
+          font-size: 14px;
+        }
+        @include sm {
+          font-size: 14px;
+        }
       }
       .menu-sub {
         position: absolute;

@@ -180,22 +180,19 @@ input {
 
 .landing-page {
   position: relative;
-  min-height: 1000px;
-  max-height: 100vh; }
-  @media (max-width: 480px) {
-    .landing-page {
-      min-height: 420px;
-      width: 100vw; } }
-  @media (max-width: 767px) {
-    .landing-page {
-      max-height: 650px;
-      width: 100vw; } }
-  @media (min-width: 768px) and (max-width: 979px) {
-    .landing-page {
-      max-height: 700px; } }
+  min-height: 950px; }
   @media (min-width: 1200px) {
     .landing-page {
       padding-left: 10%; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .landing-page {
+      min-height: 700px; } }
+  @media (max-width: 767px) {
+    .landing-page {
+      min-height: 630px; } }
+  @media (max-width: 480px) {
+    .landing-page {
+      min-height: 490px; } }
   .landing-page .presentation {
     position: absolute;
     margin-top: 10rem;
@@ -222,6 +219,12 @@ input {
           font-size: 7rem;
           letter-spacing: -0.015em;
           color: var(--secondary); }
+          @media (max-width: 767px) {
+            .landing-page .presentation .presentation-container .top-slogan p {
+              font-size: 4.5rem; } }
+          @media (max-width: 480px) {
+            .landing-page .presentation .presentation-container .top-slogan p {
+              font-size: 3rem; } }
           .landing-page .presentation .presentation-container .top-slogan p span {
             background: var(--subtitle); }
       .landing-page .presentation .presentation-container button {
@@ -236,15 +239,18 @@ input {
         margin-bottom: 3rem;
         color: var(--secondary);
         font-size: 2rem; }
-        @media (max-width: 480px) {
-          .landing-page .presentation .presentation-container button {
-            bottom: -15rem;
-            width: 125px;
-            height: 50px; } }
         @media (max-width: 767px) {
           .landing-page .presentation .presentation-container button {
+            bottom: -12rem;
             width: 35%;
-            height: 15%; } }
+            height: 15%;
+            font-size: 1.75rem; } }
+        @media (max-width: 480px) {
+          .landing-page .presentation .presentation-container button {
+            bottom: -10rem;
+            width: 125px;
+            height: 50px;
+            font-size: 1.25rem; } }
     .landing-page .presentation .display-orange {
       position: absolute;
       width: 603px;
@@ -454,12 +460,24 @@ input {
       position: relative;
       margin: 3rem 5rem 0 0;
       transition: ease-in 0.5s all; }
+      @media (min-width: 768px) and (max-width: 979px) {
+        .header-nav .container-nav li {
+          margin: 3rem 3rem 0 0; } }
+      @media (max-width: 767px) {
+        .header-nav .container-nav li {
+          margin: 7.5rem 3rem 0 0; } }
       .header-nav .container-nav li a {
         font-weight: 600;
         font-size: 20px;
         letter-spacing: 0.075em;
         color: var(--primary);
         animation-duration: 1s; }
+        @media (min-width: 768px) and (max-width: 979px) {
+          .header-nav .container-nav li a {
+            font-size: 14px; } }
+        @media (max-width: 767px) {
+          .header-nav .container-nav li a {
+            font-size: 14px; } }
       .header-nav .container-nav li .menu-sub {
         position: absolute;
         bottom: 0.25px;
