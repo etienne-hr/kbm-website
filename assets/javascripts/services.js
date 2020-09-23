@@ -1,4 +1,3 @@
-// const btnRight = document.querySelector(".btn-service-right");
 const sliderOne = document.querySelector(".slider1");
 const sliderTwo = document.querySelector(".slider2");
 const sliderThree = document.querySelector(".slider3");
@@ -29,7 +28,7 @@ class Slider {
 
     this.btnRight.addEventListener("click", () => {
       if (slideTarget < this.image.length - 1) {
-        sliderMove += sliderSize - 1;
+        sliderMove += sliderSize;
         this.slide.style.left = -sliderMove + "px";
         slideTarget += 1;
         this.btnLeft.style.display = "block";
@@ -43,7 +42,7 @@ class Slider {
     });
 
     this.btnLeft.addEventListener("click", () => {
-      sliderMove = sliderMove - (sliderSize - 1);
+      sliderMove = sliderMove - sliderSize - 1;
       this.slide.style.left = -sliderMove + "px";
       if (slideTarget <= this.image.length - 1) {
         this.btnRight.style.display = "block";
@@ -56,10 +55,9 @@ class Slider {
     });
 
     setInterval(() => {
-      // console.log(slideTarget);
       if (slideTarget < this.image.length - 1) {
         this.btnLeft.style.display = "block";
-        sliderMove += sliderSize - 1;
+        sliderMove += sliderSize;
         this.slide.style.left = -sliderMove + "px";
         slideTarget += 1;
       } else {
@@ -88,7 +86,7 @@ class Slider {
     for (const dot of this.dots) {
       dot.addEventListener("click", () => {
         slideTarget = parseInt(dot.dataset.pos);
-        sliderMove = (sliderSize - 1) * slideTarget;
+        sliderMove = sliderSize * slideTarget;
         this.slide.style.left = -sliderMove + "px";
         if (slideTarget === this.image.length - 1) {
           this.btnRight.style.display = "none";

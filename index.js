@@ -56,3 +56,22 @@ class Menu {
 }
 
 const scrollMenu = new Menu(nav);
+
+//Hover on the image of the first slider
+const hoverFirstSlider = document.querySelectorAll(".slider1 .is-linked");
+const discover = document.querySelectorAll(".slider1 .discover");
+console.log(discover);
+console.log(hoverFirstSlider);
+
+hoverFirstSlider.forEach((element) => {
+  element.addEventListener("mouseover", (event) => {
+    discover.forEach((p) => {
+      p.style.opacity = 1;
+    });
+  });
+  element.addEventListener("mouseout", (event) => {
+    discover.forEach((p) => {
+      p.style.opacity = 0;
+    });
+  });
+});
