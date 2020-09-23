@@ -7,52 +7,52 @@ echo '
 <div class="slide">
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=escaliers"><img class="is-linked" src="assets\images\metallerie\escalier.png" alt="Escaliers"></a>
+                        <a href="./newgallery.php?folder=escaliers"><img class="is-linked" src="assets\images\services\metallerie\escalier.png" alt="Escaliers"></a>
                         <p class="context-slide"><span class="title-service">Escaliers</span> </p>
                         
                 </div>
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=gardes-corps"> <img class="is-linked" src="assets\images\metallerie\gc.png" alt="Gardes corps"></a>
+                        <a href="./newgallery.php?folder=gardes-corps"> <img class="is-linked" src="assets\images\services\metallerie\gc.png" alt="Gardes corps"></a>
                         <p class="context-slide" "><span class="title-service">Gardes Corps</span> </p>
                 </div>
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=auvent"> <img class="is-linked" src="assets\images\metallerie\auvent.png" alt="Auvent"></a>
+                        <a href="./newgallery.php?folder=auvent"> <img class="is-linked" src="assets\images\services\metallerie\auvent.png" alt="Auvent"></a>
                         <p class="context-slide"><span class="title-service">Auvent</span> </p>
                         </div>
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=portails-clotures"><img class="is-linked" src="assets\images\metallerie\cloture.png" alt="Portails/Clotures"></a>
+                        <a href="./newgallery.php?folder=portails-clotures"><img class="is-linked" src="assets\images\services\metallerie\cloture.png" alt="Portails/Clotures"></a>
                         <p class="context-slide" ><span class="title-service">Portails et clotures</span> </p>
                         </div>
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=charpentes"> <img class="is-linked" src="assets\images\metallerie\charpente.png" alt="Charpentes"></a>
+                        <a href="./newgallery.php?folder=charpentes"> <img class="is-linked" src="assets\images\services\metallerie\charpente.png" alt="Charpentes"></a>
                         <p class="context-slide"><span class="title-service">Charpentes</span> </p>
                         </div>
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=portes"><img class="is-linked" src="assets\images\metallerie\acces.png" alt="Portes et controle accès"></a>
+                        <a href="./newgallery.php?folder=portes"><img class="is-linked" src="assets\images\services\metallerie\acces.png" alt="Portes et controle accès"></a>
                         <p class="context-slide"><span class="title-service">Portes/controle accès</span> </p>
                 </div>
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=vitres"> <img class="is-linked" src="assets\images\metallerie\vitre.png" alt="Baie vitrée"></a>
+                        <a href="./newgallery.php?folder=vitres"> <img class="is-linked" src="assets\images\services\metallerie\vitre.png" alt="Baie vitrée"></a>
                         <p class="context-slide"><span class="title-service">Baie vitrée</span> </p>
                 </div>
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=auvent"> <img class="is-linked" src="assets\images\metallerie\surmesure.png" alt="Sur-mesure"></a>
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Sur-mesure</span> </a>
+                        <a href="./newgallery.php?folder=sur-mesure"> <img class="is-linked" src="assets\images\services\metallerie\surmesure.png" alt="Sur-mesure"></a>
+                        <p class="context-slide"><span class="title-service">Sur-mesure</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\charpente.png" alt="Maintenance">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Maintenance</span> </a>
+                        <img src="assets\images\services\metallerie\maintenance.png" alt="Maintenance">
+                        <p class="context-slide"><span class="title-service">Maintenance</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\metallerie\acces.png" alt="Montage">
-                        <a class="context-slide" href="http://google.com"><span class="title-service">Montage</span> </a>
+                        <img src="assets\images\services\metallerie\montage.png" alt="Montage">
+                        <p class="context-slide"><span class="title-service">Montage</span> </p>
                 </div>
         </div>
         <div class="btn-service-right">
@@ -84,23 +84,23 @@ echo '
 <div class="slider-services slider2">
         <div class="slide">
                 <div class="image">
-                        <img src="assets\images\automatisme\photo1.png" alt="Électricité">
+                        <img src="assets\images\services\automatisme\photo1.png" alt="Électricité">
                         <p class="context-slide"><span class="title-service">Électricité</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\automatisme\photo2.png" alt="Bâtiment">
+                        <img src="assets\images\services\automatisme\photo2.png" alt="Bâtiment">
                         <p class="context-slide"><span class="title-service">Bâtiment</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\automatisme\photo3.png" alt="Industriel">
+                        <img src="assets\images\services\automatisme\photo3.png" alt="Industriel">
                         <p class="context-slide"><span class="title-service">Industriel</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\automatisme\photo4.png" alt="Automatisme">
+                        <img src="assets\images\services\automatisme\photo4.png" alt="Automatisme">
                         <p class="context-slide"><span class="title-service">Automatisme</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\automatisme\photo5.png" alt="Maintenance">
+                        <img src="assets\images\services\automatisme\photo5.png" alt="Maintenance">
                         <p class="context-slide"><span class="title-service">Maintenance</span> </p>
                 </div>
         </div>
@@ -128,15 +128,15 @@ echo '
 <div class="slider-services slider3">
         <div class="slide">
                 <div class="image">
-                        <img src="assets\images\securite\photo1.png" alt="Légal">
+                        <img src="assets\images\services\securite\photo1.png" alt="Légal">
                         <p class="context-slide"><span class="title-service">Légal</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\securite\photo2.png" alt="PMR">
+                        <img src="assets\images\services\securite\photo2.png" alt="PMR">
                         <p class="context-slide"><span class="title-service">PMR</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\securite\photo3.png" alt="Conforme">
+                        <img src="assets\images\services\securite\photo3.png" alt="Conforme">
                         <p class="context-slide"><span class="title-service">Conforme</span> </p>
                 </div>
         </div>
@@ -162,19 +162,19 @@ echo '
 <div class="slider-services slider4">
         <div class="slide">
                 <div class="image">
-                        <img src="assets\images\materiaux\photo1.png" alt="Acier">
+                        <img src="assets\images\services\materiaux\photo1.png" alt="Acier">
                         <p class="context-slide"><span class="title-service">Acier</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\materiaux\photo2.png" alt="Inox">
+                        <img src="assets\images\services\materiaux\photo2.png" alt="Inox">
                         <p class="context-slide"><span class="title-service">Inox</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\materiaux\photo3.png" alt="Aluminium">
+                        <img src="assets\images\services\materiaux\photo3.png" alt="Aluminium">
                         <p class="context-slide"><span class="title-service">Aluminium</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\materiaux\photo4.png" alt="Composite">
+                        <img src="assets\images\services\materiaux\photo4.png" alt="Composite">
                         <p class="context-slide"><span class="title-service">Composite</span> </p>
                 </div>
         </div>

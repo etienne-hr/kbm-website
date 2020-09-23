@@ -28,7 +28,7 @@ class Slider {
 
     this.btnRight.addEventListener("click", () => {
       if (slideTarget < this.image.length - 1) {
-        sliderMove += sliderSize;
+        sliderMove += sliderSize - 1;
         this.slide.style.left = -sliderMove + "px";
         slideTarget += 1;
         this.btnLeft.style.display = "block";
@@ -42,7 +42,7 @@ class Slider {
     });
 
     this.btnLeft.addEventListener("click", () => {
-      sliderMove = sliderMove - sliderSize - 1;
+      sliderMove = sliderMove - sliderSize + 1;
       this.slide.style.left = -sliderMove + "px";
       if (slideTarget <= this.image.length - 1) {
         this.btnRight.style.display = "block";
@@ -57,7 +57,7 @@ class Slider {
     setInterval(() => {
       if (slideTarget < this.image.length - 1) {
         this.btnLeft.style.display = "block";
-        sliderMove += sliderSize;
+        sliderMove += sliderSize - 1;
         this.slide.style.left = -sliderMove + "px";
         slideTarget += 1;
       } else {
@@ -86,7 +86,7 @@ class Slider {
     for (const dot of this.dots) {
       dot.addEventListener("click", () => {
         slideTarget = parseInt(dot.dataset.pos);
-        sliderMove = sliderSize * slideTarget;
+        sliderMove = sliderSize * slideTarget - slideTarget;
         this.slide.style.left = -sliderMove + "px";
         if (slideTarget === this.image.length - 1) {
           this.btnRight.style.display = "none";
