@@ -1,11 +1,15 @@
 <?php
-echo ' <div class="container-company" id="company">
-<div class="company-orange-top"><h2>KBM</h2></div>
-<div class="company-center-block">
-        <img src="assets\images\logos\logokbmbackground.png" alt="logo">
-        <p>“ Une expertise de longue date dans la <span>serruerie</span> et la <span>métallerie</span> ” </p>
-        <div class="company-front-block">
-        </div>
-        <div class="back-block-orange"></div>
+$a = "'";
+echo '<div class="container-company" id="company">
+<div class="company-title">
+        <div class="line-orange"></div>
+        <h2>L'.$a.'entreprise</h2>
+</div>
+<img src="assets\images\logos\logokbmbackground.png" alt="logo">
+<div class="text-presentation">
+        <p>Présent depuis de nombreuses années dans les domaines de la <span>métallerie</span>, <span>serrurerie</span> et <span>automatisme</span>.</p>
+</div>
+<div class="text-presentation">
+        <p>Nos présentations et réalisations sont encrées en Alsace. Nous travaillons aussi bien pour l’industrie, le particulier, les promoteurs ou les acteurs territoriaux comme les mairies, le département ou la région.</p>
 </div>
 </div>';

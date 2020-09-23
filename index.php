@@ -27,30 +27,14 @@ include './includes/config/form-handler.php';
         include './includes/view/services.php';
         ?>
         <?php
+        include './includes/view/gallery.php';
+        ?>
+        <?php
         include './includes/view/company.php';
         ?>
         <?php
-        include './includes/view/gallery.php';
+        include './includes/view/material.php';
         ?>
-        <div class="provider-container">
-                <h3 class="reverse-title">Fournisseurs</h3>
-                <a class="provider-img" href="https://www.came.com/fr/"><img src="assets\images\logos\came.png" alt="came logo"></a>
-                <a class="provider-img" href="https://faac.fr/"><img src="assets\images\logos\faac.png" alt="faac logo"></a>
-        </div>
-        <div class="container-material">
-                <h3 class="reverse-title">Matériaux</h3>
-                <h4>MÉTAL <div class="sub-title-material"></div></h4>
-                <h4>ACIER <div class="sub-title-material"></div></h4>
-                <h4>ALUMINIUM <div class="sub-title-material"></div></h4>
-                <h4>COMPOSITE <div class="sub-title-material"></div></h4>
-        </div>
-        
-        <!-- <?php
-                include './includes/view/provider.php';
-                ?> -->
-        <!-- <?php
-                include './includes/view/form.php';
-                ?> -->
                 <div class="form-contact-container" id="contact">
                 <h2>Votre projet</h2>
                 <div class="contact">

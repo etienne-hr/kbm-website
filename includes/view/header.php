@@ -8,10 +8,10 @@ echo '<div class="logo-top">
                 <div class="menu-sub"></div> <a href="#services">Nos Services</a>
         </li>
         <li>
-                <div class="menu-sub"></div><a href="#company">Notre entreprise</a>
+                <div class="menu-sub"></div><a href="#galery">Galerie</a>
         </li>
         <li>
-                <div class="menu-sub"></div><a href="#galery">Galerie</a>
+                <div class="menu-sub"></div><a href="#company">Notre entreprise</a>
         </li>
         <li>
                 <div class="menu-sub"></div><a href="#contact">Contact</a>

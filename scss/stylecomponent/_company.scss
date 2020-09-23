@@ -1,70 +1,51 @@
 .container-company {
-  min-height: 750px;
-  background: var(--secondary);
+  min-height: 700px;
+  background: var(--primary);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  .company-orange-top {
-    position: absolute;
-    width: 563px;
-    height: 402px;
-    left: 89px;
-    top: 0px;
-    background: var(--orange);
-    h2 {
-      margin-top: 2rem;
-      position: absolute;
-      text-overflow: ellipsis;
-      left: 3rem;
-      top: 2rem;
-      letter-spacing: -0.015em;
-      color: var(--secondary);
+  flex-direction: column;
+  .text-presentation {
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    color: var(--secondary);
+    margin: 2rem 0 0 8rem;
+    border-left: solid var(--orange);
+    span {
+      background: var(--subtitle);
     }
   }
-  .company-center-block {
-    width: 908px;
-    height: 502px;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    .company-front-block {
+  img {
+    position: absolute;
+    width: 280px;
+    height: 113px;
+    left: 992px;
+    top: 65px;
+  }
+  .company-title {
+    position: absolute;
+    margin-top: 2rem;
+    width: 435px;
+    height: 7rem;
+    top: 0;
+    left: 0;
+    .line-orange {
       width: 100%;
-      height: 100%;
+      background: var(--orange);
+      height: 1rem;
+      position: absolute;
+      bottom: 0.5rem;
+      z-index: 0;
+    }
+    h2 {
+      color: var(--secondary);
+      margin-left: 72px;
       position: absolute;
       z-index: 1;
-      box-shadow: var(--shadow-button);
-      background: var(--primary);
-    }
-    img {
-      position: absolute;
-      width: 280px;
-      height: 113px;
-      left: 0;
-      top: 0;
-      margin: 2rem 0 0 2rem;
-      z-index: 2;
-    }
-    p {
-      z-index: 2;
-      color: var(--secondary);
-      font-weight: 500;
-      font-size: 5rem;
-      text-align: center;
-      span {
-        background: var(--subtitle);
-      }
-    }
-    .back-block-orange {
-      position: absolute;
-      width: 362px;
-      height: 230px;
-      bottom: 0;
-      right: 0;
-      z-index: 0;
-      transform: translateY(50%) translateX(50%);
-      background: var(--orange);
     }
   }
 }
