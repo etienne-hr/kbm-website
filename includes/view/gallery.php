@@ -1,18 +1,18 @@
 <?php
 echo '<div class="gallery-container" id="galery">
 <div class="gallery-orange-block">
-        <h2>Galerie des réalisation</h2>
+        <h2>Galerie des réalisations</h2>
 </div>
 <div class="gallery">
         <div class="gallery-images">
-                <img src="assets\images\gallery\photo1.png" alt="">
-                <img src="assets\images\gallery\photo2.png" alt="">
-                <img src="assets\images\gallery\photo3.png" alt="">
-                <img src="assets\images\gallery\photo4.png" alt="">
-                <img src="assets\images\gallery\photo5.png" alt="">
-                <img src="assets\images\gallery\photo6.png" alt="">
-                <img src="assets\images\gallery\photo7.png" alt="">
-                <img src="assets\images\gallery\photo8.png" alt="">
+                <img src="assets\images\escaliers\escalier1.png" alt="escalier">
+                <img src="assets\images\sur-mesure\carport.png" alt="Car port">
+                <img src="assets\images\portails-clotures\portail.png" alt="portail">
+                <img src="assets\images\auvent\auvent.png" alt="auvent">
+                <img src="assets\images\gardes-corps\garde-corps-acier.png" alt="Garde-corps">
+                <img src="assets\images\gardes-corps\garde-corps-acier2.png" alt="Garde-corps">
+                <img src="assets\images\vitres\baie-vitre.png" alt="baie vitrée">
+                <img src="assets\images\vitres\sncf.png" alt="Zone gare SNCF Mulhouse avec vitrage">
         </div>
         <div class="gallery-controller">
                 <div class="controller controller-up">

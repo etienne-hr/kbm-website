@@ -84,23 +84,23 @@ echo '
 <div class="slider-services slider2">
         <div class="slide">
                 <div class="image">
-                        <img src="assets\images\services\automatisme\photo1.png" alt="Électricité">
+                        <img src="assets\images\services\automatisme\elec.png" alt="Électricité">
                         <p class="context-slide"><span class="title-service">Électricité</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\services\automatisme\photo2.png" alt="Bâtiment">
+                        <img src="assets\images\services\automatisme\batiment.png" alt="Bâtiment">
                         <p class="context-slide"><span class="title-service">Bâtiment</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\services\automatisme\photo3.png" alt="Industriel">
+                        <img src="assets\images\services\automatisme\industriel.png" alt="Industriel">
                         <p class="context-slide"><span class="title-service">Industriel</span> </p>
                 </div>
-                <div class="image">
-                        <img src="assets\images\services\automatisme\photo4.png" alt="Automatisme">
+                <!-- <div class="image">
+                        <img src="assets\images\services\automatisme\industriel.png" alt="Automatisme">
                         <p class="context-slide"><span class="title-service">Automatisme</span> </p>
-                </div>
+                </div> -->
                 <div class="image">
-                        <img src="assets\images\services\automatisme\photo5.png" alt="Maintenance">
+                        <img src="assets\images\services\metallerie\maintenance.png" alt="Maintenance">
                         <p class="context-slide"><span class="title-service">Maintenance</span> </p>
                 </div>
         </div>
@@ -121,22 +121,22 @@ echo '
                 <li data-pos="1"></li>
                 <li data-pos="2"></li>
                 <li data-pos="3"></li>
-                <li data-pos="4"></li>
+                <!-- <li data-pos="4"></li> -->
         </ul>
 </div>
 <h3> Sécurité </h3>
 <div class="slider-services slider3">
         <div class="slide">
                 <div class="image">
-                        <img src="assets\images\services\securite\photo1.png" alt="Légal">
+                        <img src="assets\images\services\securite\legal.png" alt="Légal">
                         <p class="context-slide"><span class="title-service">Légal</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\services\securite\photo2.png" alt="PMR">
+                        <img src="assets\images\services\securite\pmr.png" alt="PMR">
                         <p class="context-slide"><span class="title-service">PMR</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\services\securite\photo3.png" alt="Conforme">
+                        <img src="assets\images\services\securite\conforme.png" alt="Conforme">
                         <p class="context-slide"><span class="title-service">Conforme</span> </p>
                 </div>
         </div>
@@ -162,19 +162,19 @@ echo '
 <div class="slider-services slider4">
         <div class="slide">
                 <div class="image">
-                        <img src="assets\images\services\materiaux\photo1.png" alt="Acier">
+                        <img src="assets\images\services\materiaux\acier.png" alt="Acier">
                         <p class="context-slide"><span class="title-service">Acier</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\services\materiaux\photo2.png" alt="Inox">
+                        <img src="assets\images\services\materiaux\inox.png" alt="Inox">
                         <p class="context-slide"><span class="title-service">Inox</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\services\materiaux\photo3.png" alt="Aluminium">
+                        <img src="assets\images\services\materiaux\alu.png" alt="Aluminium">
                         <p class="context-slide"><span class="title-service">Aluminium</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\services\materiaux\photo4.png" alt="Composite">
+                        <img src="assets\images\services\materiaux\composite.png" alt="Composite">
                         <p class="context-slide"><span class="title-service">Composite</span> </p>
                 </div>
         </div>
