@@ -352,7 +352,8 @@ input {
     overflow: visible; }
     @media (max-width: 767px) {
       .gallery-container .gallery-orange-block {
-        width: 300px; } }
+        width: 300px;
+        top: 2rem; } }
     @media (max-width: 480px) {
       .gallery-container .gallery-orange-block {
         width: 100vw; } }
@@ -380,7 +381,7 @@ input {
         top: 30%; } }
     @media (max-width: 480px) {
       .gallery-container .gallery {
-        top: 40%; } }
+        top: 45%; } }
     .gallery-container .gallery .gallery-images {
       position: absolute;
       top: 0;
@@ -425,6 +426,9 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  @media (max-width: 480px) {
+    .container-company {
+      min-height: 550px; } }
   .container-company .text-presentation {
     font-family: Montserrat;
     font-size: 3rem;
@@ -434,14 +438,29 @@ input {
     color: var(--secondary);
     margin: 2rem 0 0 8rem;
     border-left: solid var(--orange); }
+    @media (max-width: 480px) {
+      .container-company .text-presentation {
+        font-size: 1.5rem;
+        margin: 0 0 2rem 2rem; } }
     .container-company .text-presentation span {
       background: var(--subtitle); }
   .container-company img {
     position: absolute;
     width: 280px;
     height: 113px;
-    left: 992px;
+    right: 5rem;
     top: 65px; }
+    @media (max-width: 767px) {
+      .container-company img {
+        right: 2rem;
+        width: 150px;
+        height: 70px; } }
+    @media (max-width: 480px) {
+      .container-company img {
+        top: 2rem;
+        right: 2rem;
+        width: 80px;
+        height: 40px; } }
   .container-company .company-title {
     position: absolute;
     margin-top: 2rem;
@@ -449,6 +468,10 @@ input {
     height: 7rem;
     top: 0;
     left: 0; }
+    @media (max-width: 480px) {
+      .container-company .company-title {
+        width: 250px;
+        margin-top: 7rem; } }
     .container-company .company-title .line-orange {
       width: 100%;
       background: var(--orange);
@@ -456,6 +479,9 @@ input {
       position: absolute;
       bottom: 0.5rem;
       z-index: 0; }
+      @media (max-width: 480px) {
+        .container-company .company-title .line-orange {
+          bottom: 2rem; } }
     .container-company .company-title h2 {
       color: var(--secondary);
       margin-left: 72px;
