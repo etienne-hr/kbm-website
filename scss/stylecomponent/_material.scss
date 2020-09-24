@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
   padding: 10rem 0 10rem 0;
   .reverse-title {
     color: var(--primary);
@@ -14,6 +15,9 @@
     letter-spacing: -0.015em;
     z-index: 1;
     margin: 1.5rem;
+    @include xs {
+      font-size: 42px;
+    }
     .sub-title-material {
       position: absolute;
       background: var(--orange);
@@ -22,6 +26,10 @@
       width: 15rem;
       height: 3rem;
       z-index: -1;
+      @include xs {
+        width: 7rem;
+        height: 1.5rem;
+      }
     }
   }
 }
