@@ -48,6 +48,9 @@
   position: absolute;
   left: 0;
   margin-left: 2rem; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .reverse-title {
+      margin-left: 0rem; } }
   @media (max-width: 767px) {
     .reverse-title {
       top: 0;
@@ -451,10 +454,13 @@ input {
     color: var(--secondary);
     margin: 2rem 0 0 8rem;
     border-left: solid var(--orange); }
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container-company .text-presentation {
+        margin: 0 0 2rem 2rem; } }
     @media (max-width: 480px) {
       .container-company .text-presentation {
         font-size: 1.5rem;
-        margin: 0 0 2rem 2rem; } }
+        margin: 0 0 2rem 2.5rem; } }
     .container-company .text-presentation span {
       background: var(--subtitle); }
   .container-company img {
@@ -463,6 +469,11 @@ input {
     height: 113px;
     right: 5rem;
     top: 65px; }
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container-company img {
+        right: 2rem;
+        width: 150px;
+        height: 70px; } }
     @media (max-width: 767px) {
       .container-company img {
         right: 2rem;
@@ -508,31 +519,52 @@ input {
   align-items: center;
   padding-bottom: 30rem;
   background: var(--primary); }
+  @media (max-width: 767px) {
+    .form-contact-container {
+      padding-bottom: 20rem; } }
   .form-contact-container .contact {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 10%; }
+    @media (min-width: 768px) and (max-width: 979px) {
+      .form-contact-container .contact {
+        margin-top: 13%; } }
+    @media (max-width: 767px) {
+      .form-contact-container .contact {
+        margin-top: 13%; } }
     .form-contact-container .contact .message-error {
       color: red;
       font-size: 24px; }
+      @media (max-width: 767px) {
+        .form-contact-container .contact .message-error {
+          font-size: 16px; } }
     .form-contact-container .contact .message-success {
       color: green;
       font-size: 24px;
       letter-spacing: 0.11em;
       margin: 1rem 0 1rem 0; }
+      @media (max-width: 767px) {
+        .form-contact-container .contact .message-success {
+          font-size: 16px; } }
     .form-contact-container .contact .contact-p {
       display: flex;
       justify-content: flex-start;
       width: 100%;
       margin-bottom: 1rem; }
+      @media (max-width: 767px) {
+        .form-contact-container .contact .contact-p {
+          margin-top: 5rem; } }
       .form-contact-container .contact .contact-p p {
         color: var(--secondary);
         font-style: normal;
         font-weight: normal;
         font-size: 36px;
         letter-spacing: 0.11em; }
+        @media (max-width: 767px) {
+          .form-contact-container .contact .contact-p p {
+            font-size: 24px; } }
     .form-contact-container .contact .contact-form {
       display: flex;
       justify-content: space-evenly;
@@ -541,22 +573,63 @@ input {
       width: 884px;
       height: 947px;
       background: var(--orange); }
+      @media (min-width: 768px) and (max-width: 979px) {
+        .form-contact-container .contact .contact-form {
+          width: 650px;
+          height: 750px; } }
+      @media (max-width: 767px) {
+        .form-contact-container .contact .contact-form {
+          width: 470px;
+          height: 610px; } }
       .form-contact-container .contact .contact-form .g-recaptcha {
         padding-left: 10rem; }
+        @media (min-width: 768px) and (max-width: 979px) {
+          .form-contact-container .contact .contact-form .g-recaptcha {
+            padding-left: 8rem; } }
+        @media (max-width: 767px) {
+          .form-contact-container .contact .contact-form .g-recaptcha {
+            width: 500px;
+            height: 50px;
+            transform: scale(0.8);
+            padding-left: 4rem; } }
       .form-contact-container .contact .contact-form fieldset {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         margin-left: 10rem; }
+        @media (min-width: 768px) and (max-width: 979px) {
+          .form-contact-container .contact .contact-form fieldset {
+            margin-left: 8rem; } }
+        @media (max-width: 767px) {
+          .form-contact-container .contact .contact-form fieldset {
+            margin-left: 8rem; } }
         .form-contact-container .contact .contact-form fieldset label {
           font-size: 16px;
           margin-bottom: 1rem; }
+          @media (max-width: 767px) {
+            .form-contact-container .contact .contact-form fieldset label {
+              margin-bottom: 0.25rem; } }
         .form-contact-container .contact .contact-form fieldset input {
           width: 482px;
           height: 67px; }
+          @media (min-width: 768px) and (max-width: 979px) {
+            .form-contact-container .contact .contact-form fieldset input {
+              height: 40px; } }
+          @media (max-width: 767px) {
+            .form-contact-container .contact .contact-form fieldset input {
+              height: 35px;
+              width: 300px; } }
         .form-contact-container .contact .contact-form fieldset textarea {
           width: 663px;
           height: 335px; }
+          @media (min-width: 768px) and (max-width: 979px) {
+            .form-contact-container .contact .contact-form fieldset textarea {
+              width: 482px;
+              height: 280px; } }
+          @media (max-width: 767px) {
+            .form-contact-container .contact .contact-form fieldset textarea {
+              width: 300px;
+              height: 150px; } }
       .form-contact-container .contact .contact-form button {
         position: absolute;
         bottom: -150px;
@@ -568,6 +641,15 @@ input {
         font-style: normal;
         font-weight: normal;
         font-size: 24px; }
+        @media (min-width: 768px) and (max-width: 979px) {
+          .form-contact-container .contact .contact-form button {
+            margin-left: 8rem; } }
+        @media (max-width: 767px) {
+          .form-contact-container .contact .contact-form button {
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            bottom: -90px; } }
         .form-contact-container .contact .contact-form button:hover {
           background: var(--orange);
           transition: ease-in 0.25s; }
@@ -577,6 +659,12 @@ input {
     left: 72px;
     top: 0;
     margin: 5rem 0 0 3rem; }
+    @media (min-width: 768px) and (max-width: 979px) {
+      .form-contact-container h2 {
+        margin: 2rem 0 0 3rem; } }
+    @media (max-width: 767px) {
+      .form-contact-container h2 {
+        margin: 2rem 0 0 3rem; } }
 
 .logo-top {
   position: absolute;

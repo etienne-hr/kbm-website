@@ -18,9 +18,12 @@
     color: var(--secondary);
     margin: 2rem 0 0 8rem;
     border-left: solid var(--orange);
+    @include md {
+      margin: 0 0 2rem 2rem;
+    }
     @include xs {
       font-size: 1.5rem;
-      margin: 0 0 2rem 2rem;
+      margin: 0 0 2rem 2.5rem;
     }
     span {
       background: var(--subtitle);
@@ -32,6 +35,11 @@
     height: 113px;
     right: 5rem;
     top: 65px;
+    @include md {
+      right: 2rem;
+      width: 150px;
+      height: 70px;
+    }
     @include sm {
       right: 2rem;
       width: 150px;
