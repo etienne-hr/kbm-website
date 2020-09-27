@@ -38,7 +38,7 @@ echo '
                 </div>
                 <div class="image">
                         <p class="discover">Découvrir</p>
-                        <a href="./newgallery.php?folder=vitres"> <img class="is-linked" src="assets\images\services\metallerie\vitre.png" alt="Baie vitrée"></a>
+                        <a href="./newgallery.php?folder=vitrages"> <img class="is-linked" src="assets\images\services\metallerie\vitre.png" alt="Baie vitrée"></a>
                         <p class="context-slide"><span class="title-service">Baie vitrée</span> </p>
                 </div>
                 <div class="image">

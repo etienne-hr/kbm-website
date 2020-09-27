@@ -14,10 +14,11 @@ class Gallery {
     let hasMove = false;
     let windowX = this.window.innerWidth;
 
-    this.btnUp.addEventListener("mousedown", (event) => {
+    const btnUpStart = () => {
       motion = true;
       if (motion == true) {
         timer = setInterval(() => {
+          console.log("ok");
           let pos = this.gallery.getBoundingClientRect();
           if (pos.x < -100) {
             distance = distance + 50;
@@ -26,15 +27,16 @@ class Gallery {
           }
         }, 100);
       }
-    });
-    this.btnUp.addEventListener("mouseup", (event) => {
+    };
+
+    const btnUpStop = () => {
       motion = false;
       if (motion == false) {
         clearInterval(timer);
       }
-    });
+    };
 
-    this.btnDown.addEventListener("mousedown", (event) => {
+    const btnDownStart = () => {
       if (hasMove === true) {
         timer = setInterval(() => {
           let pos = this.gallery.getBoundingClientRect();
@@ -47,9 +49,42 @@ class Gallery {
           }
         }, 100);
       }
+    };
+
+    const btnDownStop = () => {
+      clearInterval(timer);
+    };
+
+    //Desktop
+
+    this.btnUp.addEventListener("mousedown", (event) => {
+      btnUpStart();
+    });
+    this.btnUp.addEventListener("mouseup", (event) => {
+      btnUpStop();
+    });
+
+    this.btnDown.addEventListener("mousedown", (event) => {
+      btnDownStart();
     });
     this.btnDown.addEventListener("mouseup", (event) => {
-      clearInterval(timer);
+      btnDownStop();
+    });
+
+    //Phones and tablets
+
+    this.btnUp.addEventListener("touchstart", (event) => {
+      btnUpStart();
+    });
+    this.btnUp.addEventListener("touchend", (event) => {
+      btnUpStop();
+    });
+
+    this.btnDown.addEventListener("touchstart", (event) => {
+      btnDownStart();
+    });
+    this.btnDown.addEventListener("touchend", (event) => {
+      btnDownStop();
     });
 
     this.window.addEventListener("resize", () => {

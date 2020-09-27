@@ -11,8 +11,8 @@ echo '<div class="gallery-container" id="galery">
                 <img src="assets\images\auvent\auvent.png" alt="auvent">
                 <img src="assets\images\gardes-corps\garde-corps-acier.png" alt="Garde-corps">
                 <img src="assets\images\gardes-corps\garde-corps-acier2.png" alt="Garde-corps">
-                <img src="assets\images\vitres\baie-vitre.png" alt="baie vitrée">
-                <img src="assets\images\vitres\sncf.png" alt="Zone gare SNCF Mulhouse avec vitrage">
+                <img src="assets\images\vitrages\baie-vitre.png" alt="baie vitrée">
+                <img src="assets\images\vitrages\sncf.png" alt="Zone gare SNCF Mulhouse avec vitrage">
         </div>
         <div class="gallery-controller">
                 <div class="controller controller-up">

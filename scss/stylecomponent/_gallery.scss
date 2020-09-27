@@ -36,6 +36,8 @@
       }
       @include xs {
         min-height: 330px;
+        left: 0;
+        margin: 2rem 0 0 3rem;
       }
     }
   }

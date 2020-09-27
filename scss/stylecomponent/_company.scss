@@ -76,9 +76,13 @@
     }
     h2 {
       color: var(--secondary);
-      margin-left: 72px;
+      top: 72px;
       position: absolute;
       z-index: 1;
+      @include xs {
+        top: 0;
+        margin-left: 3rem;
+      }
     }
   }
 }
