@@ -56,31 +56,59 @@ class Menu {
         hamburger();
         this.menu.addEventListener("click", (event) => {
           this.menu.classList.add("container-nav-responsive");
+          this.menu.style.padding = 0;
           this.link.forEach((element) => {
             element.style.display = "block";
           });
           this.line.forEach((element) => {
             element.style.marginTop = 0;
+            element.style.position = "static";
+          });
+          for (let index = 0; index < this.subTitle.length; index++) {
+            this.subTitle[0].classList.add("menu-sub-left-line");
+            this.subTitle[1].classList.add("menu-sub-right-line");
+          }
+          isClick = true;
+          document.body.style.position = "fixed";
+        });
+
+        this.subTitle.forEach((element) => {
+          element.addEventListener("click", (event) => {
+            if (isClick === true) {
+              backToPage();
+            }
           });
         });
 
         this.link.forEach((element) => {
           element.addEventListener("click", (event) => {
             event.stopPropagation();
-            this.menu.classList.remove("container-nav-responsive");
-            this.link.forEach((element) => {
-              element.style.display = "none";
-            });
-            this.line.forEach((element) => {
-              element.style.marginTop = 15 + "px";
-            });
-            this.subTitle.forEach((element) => {
-              element.style.width = 5 + "rem";
-            });
+            backToPage();
           });
         });
       }
     });
+
+    const backToPage = () => {
+      event.stopPropagation();
+      this.subTitle.forEach((element) => {
+        element.classList.remove("menu-sub-left-line");
+        element.classList.remove("menu-sub-right-line");
+      });
+      document.body.style.position = "";
+      this.menu.classList.remove("container-nav-responsive");
+      this.link.forEach((element) => {
+        element.style.display = "none";
+      });
+      this.line.forEach((element) => {
+        element.style.marginTop = 15 + "px";
+        element.style.position = "relative";
+      });
+      this.subTitle.forEach((element) => {
+        element.style.width = 5 + "rem";
+      });
+      this.menu.style.padding = "4rem 4rem 0 0";
+    };
 
     const hamburger = () => {
       this.menu.classList.add("is-scroll");
