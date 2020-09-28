@@ -4,10 +4,10 @@ const nav = document.querySelector(".container-nav");
 class Menu {
   constructor(nav) {
     this.menu = nav;
-    this.document = document;
     this.link = this.menu.querySelectorAll("li a");
     this.line = this.menu.querySelectorAll("li");
     this.menu.querySelectorAll("li .menu-sub");
+    this.subTitle = this.menu.querySelectorAll("li .menu-sub");
 
     let isClick = false;
 
@@ -22,37 +22,75 @@ class Menu {
       });
     });
 
-    document.addEventListener("scroll", (event) => {
-      if (scrollY > 0 && isClick === false) {
-        this.menu.classList.add("is-scroll");
-        this.link.forEach((element) => {
-          element.style.display = "none";
+    document.addEventListener("DOMContentLoaded", (event) => {
+      if (window.innerWidth > 480) {
+        document.addEventListener("scroll", (event) => {
+          if (scrollY > 0 && isClick === false) {
+            hamburger();
+          } else {
+            this.menu.classList.remove("is-scroll");
+            this.link.forEach((element) => {
+              element.style.display = "block";
+            });
+          }
+          if (scrollY === 0) {
+            this.link.forEach((element) => {
+              element.style.backgroundColor = "transparent";
+            });
+          }
+          isClick = false;
         });
-        this.line.forEach((element) => {
-          element.style.marginTop = 15 + "px";
-        });
-      } else {
-        this.menu.classList.remove("is-scroll");
-        this.link.forEach((element) => {
-          element.style.display = "block";
+        this.menu.addEventListener("click", (event) => {
+          this.menu.classList.remove("is-scroll");
+          this.link.forEach((element) => {
+            element.style.display = "block";
+            element.style.background = "var(--orangeless)";
+          });
+          isClick = true;
         });
       }
-      if (scrollY === 0) {
-        this.link.forEach((element) => {
-          element.style.backgroundColor = "transparent";
-        });
-      }
-      isClick = false;
     });
 
-    this.menu.addEventListener("click", (event) => {
-      this.menu.classList.remove("is-scroll");
-      this.link.forEach((element) => {
-        element.style.display = "block";
-        element.style.background = "var(--orangeless)";
-      });
-      isClick = true;
+    document.addEventListener("DOMContentLoaded", (event) => {
+      if (window.innerWidth < 480) {
+        hamburger();
+        this.menu.addEventListener("click", (event) => {
+          this.menu.classList.add("container-nav-responsive");
+          this.link.forEach((element) => {
+            element.style.display = "block";
+          });
+          this.line.forEach((element) => {
+            element.style.marginTop = 0;
+          });
+        });
+
+        this.link.forEach((element) => {
+          element.addEventListener("click", (event) => {
+            event.stopPropagation();
+            this.menu.classList.remove("container-nav-responsive");
+            this.link.forEach((element) => {
+              element.style.display = "none";
+            });
+            this.line.forEach((element) => {
+              element.style.marginTop = 15 + "px";
+            });
+            this.subTitle.forEach((element) => {
+              element.style.width = 5 + "rem";
+            });
+          });
+        });
+      }
     });
+
+    const hamburger = () => {
+      this.menu.classList.add("is-scroll");
+      this.link.forEach((element) => {
+        element.style.display = "none";
+      });
+      this.line.forEach((element) => {
+        element.style.marginTop = 15 + "px";
+      });
+    };
   }
 }
 

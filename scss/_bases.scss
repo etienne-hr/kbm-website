@@ -12,7 +12,9 @@ html {
 body {
   background: var(--secondary);
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  @include xs {
+    overflow-x: hidden;
+  }
 }
 
 h2 {

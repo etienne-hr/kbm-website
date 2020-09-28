@@ -17,6 +17,15 @@
   z-index: 9999;
   display: flex;
   justify-content: flex-end;
+  .container-nav-responsive {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary);
+  }
   .container-nav {
     display: flex;
     justify-content: space-evenly;

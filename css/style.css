@@ -82,8 +82,10 @@ html {
 
 body {
   background: var(--secondary);
-  font-family: "Montserrat", sans-serif;
-  overflow-x: hidden; }
+  font-family: "Montserrat", sans-serif; }
+  @media (max-width: 480px) {
+    body {
+      overflow-x: hidden; } }
 
 h2 {
   font-weight: bold;
@@ -712,6 +714,14 @@ input {
   z-index: 9999;
   display: flex;
   justify-content: flex-end; }
+  .header-nav .container-nav-responsive {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary); }
   .header-nav .container-nav {
     display: flex;
     justify-content: space-evenly;
