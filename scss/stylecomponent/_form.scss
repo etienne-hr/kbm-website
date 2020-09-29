@@ -53,6 +53,9 @@
         @include sm {
           font-size: 24px;
         }
+        @include xs {
+          margin-left: 10%;
+        }
       }
     }
 
@@ -73,9 +76,9 @@
         height: 610px;
       }
       @include xs {
-        padding: 2rem;
-        width: 80vw;
-        height: 500px;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
       }
 
       .g-recaptcha {
@@ -85,12 +88,12 @@
         }
         @include sm {
           transform: scale(0.8);
+          transform-origin: 0 0;
           padding-left: 4rem;
         }
 
         @include xs {
-          transform: scale(0.7);
-          transform-origin: 0 0;
+          padding-left: 2.5rem;
         }
       }
       fieldset {
@@ -104,8 +107,8 @@
         @include sm {
           margin-left: 8rem;
         }
-        @include sm {
-          margin-left: 1rem;
+        @include xs {
+          margin-left: 0;
         }
         label {
           font-size: 16px;
@@ -125,8 +128,8 @@
             width: 300px;
           }
           @include xs {
-            height: 30px;
-            width: 200px;
+            height: 5rem;
+            width: 80vw;
           }
         }
         textarea {
@@ -141,7 +144,7 @@
             height: 150px;
           }
           @include xs {
-            width: 250px;
+            width: 80vw;
             height: 175px;
           }
         }
@@ -164,6 +167,14 @@
           width: 200px;
           height: 50px;
           font-size: 16px;
+          bottom: -90px;
+        }
+        @include xs {
+          width: 200px;
+          height: 50px;
+          font-size: 16px;
+          margin-left: 4rem;
+          left: 0;
           bottom: -90px;
         }
         &:hover {

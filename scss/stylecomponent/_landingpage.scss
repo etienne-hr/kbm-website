@@ -19,12 +19,18 @@
     max-width: 90vw;
     max-height: 80vh;
     z-index: 0;
+    @include xs {
+      margin-top: 4rem;
+    }
     .presentation-container {
       overflow: hidden;
       width: 100%;
       height: 100%;
-      box-shadow: var(--shadow-button);
+      box-shadow: var(--shadow-photo);
       display: flex;
+      @include xs {
+        width: 100vw;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -44,7 +50,7 @@
             font-size: 4.5rem;
           }
           @include xs {
-            font-size: 3rem;
+            font-size: 4rem;
           }
           span {
             background: var(--subtitle);
@@ -70,10 +76,11 @@
           font-size: 1.75rem;
         }
         @include xs {
-          bottom: -10rem;
-          width: 125px;
-          height: 50px;
-          font-size: 1.25rem;
+          bottom: -15rem;
+          margin-right: 0.5rem;
+          width: 20rem;
+          height: 5rem;
+          font-size: 2rem;
         }
       }
     }

@@ -46,10 +46,7 @@
       height: 70px;
     }
     @include xs {
-      top: 2rem;
-      right: 2rem;
-      width: 80px;
-      height: 40px;
+      display: none;
     }
   }
   .company-title {

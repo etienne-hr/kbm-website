@@ -36,8 +36,8 @@
       height: 440px;
     }
     @include xs {
-      width: 270px;
-      height: 350px;
+      width: 100vw;
+      height: 60vh;
     }
     .slide {
       position: absolute;
@@ -52,8 +52,8 @@
           height: 440px;
         }
         @include xs {
-          width: 270px;
-          height: 350px;
+          width: 100vw;
+          height: 60vh;
         }
         .discover {
           opacity: 0;
@@ -123,12 +123,12 @@
       }
       svg {
         @include sm {
-          width: 45px;
-          height: 45px;
+          width: 65px;
+          height: 65px;
         }
         @include xs {
-          width: 35px;
-          height: 36px;
+          width: 65px;
+          height: 65px;
         }
       }
     }
@@ -141,12 +141,12 @@
       }
       svg {
         @include sm {
-          width: 45px;
-          height: 45px;
+          width: 65px;
+          height: 65px;
         }
         @include xs {
-          width: 35px;
-          height: 36px;
+          width: 65px;
+          height: 65px;
         }
       }
     }
