@@ -724,6 +724,7 @@ input {
     background: var(--secondary);
     padding: 0; }
   .header-nav .container-nav {
+    transition: ease-in 0.25s;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row; }
@@ -771,7 +772,7 @@ input {
         transition: ease-in 0.25s; }
   .header-nav .is-scroll {
     flex-direction: column;
-    padding: 4rem 4rem 0 0;
+    padding: 0 4rem 0 0;
     transition-duration: 1s; }
 
 @keyframes slideLeft {

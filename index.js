@@ -54,6 +54,7 @@ class Menu {
     document.addEventListener("DOMContentLoaded", (event) => {
       if (window.innerWidth < 480) {
         hamburger();
+        this.menu.style.padding = "4rem 4rem 0 0";
         this.menu.addEventListener("click", (event) => {
           this.menu.classList.add("container-nav-responsive");
           this.menu.style.padding = 0;
