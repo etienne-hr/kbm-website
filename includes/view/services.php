@@ -128,16 +128,16 @@ echo '
 <div class="slider-services slider3">
         <div class="slide">
                 <div class="image">
-                        <img src="assets\images\services\securite\legal.png" alt="Légal">
-                        <p class="context-slide"><span class="title-service">Légal</span> </p>
+                        <img src="assets\images\services\securite\legal.png" alt="Léglislation">
+                        <p class="context-slide"><span class="title-service">Léglisation</span> </p>
                 </div>
                 <div class="image">
                         <img src="assets\images\services\securite\pmr.png" alt="PMR">
                         <p class="context-slide"><span class="title-service">PMR</span> </p>
                 </div>
                 <div class="image">
-                        <img src="assets\images\services\securite\conforme.png" alt="Conforme">
-                        <p class="context-slide"><span class="title-service">Conforme</span> </p>
+                        <img src="assets\images\services\securite\conforme.png" alt="Conformité">
+                        <p class="context-slide"><span class="title-service">Conformité</span> </p>
                 </div>
         </div>
         <div class="btn-service-right">

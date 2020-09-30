@@ -89,7 +89,6 @@
         @include sm {
           transform: scale(0.8);
           transform-origin: 0 0;
-          padding-left: 4rem;
         }
 
         @include xs {
@@ -201,12 +200,3 @@
     }
   }
 }
-
-// #rc-imageselect {
-//   transform: scale(0.7);
-//   transform-origin: 0 0;
-//   @include xs {
-//     transform: scale(0.7);
-//     transform-origin: 0 0;
-//   }
-// }

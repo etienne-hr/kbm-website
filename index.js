@@ -11,84 +11,102 @@ class Menu {
 
     let isClick = false;
 
+    //Li on hover
     this.line.forEach((element) => {
       let hoverA = element.querySelector("li a");
       let subTitle = element.querySelector("li .menu-sub");
       hoverA.addEventListener("mouseover", () => {
-        subTitle.style.width = 100 + "%";
+        if (window.innerWidth > 480) {
+          subTitle.style.width = 100 + "%";
+        }
       });
       hoverA.addEventListener("mouseout", () => {
         subTitle.style.width = 5 + "rem";
       });
     });
 
+    //Animation header after load and resize
     document.addEventListener("DOMContentLoaded", (event) => {
       if (window.innerWidth > 480) {
-        document.addEventListener("scroll", (event) => {
-          if (scrollY > 0 && isClick === false) {
-            hamburger();
-          } else {
-            this.menu.classList.remove("is-scroll");
-            this.link.forEach((element) => {
-              element.style.display = "block";
-            });
-          }
-          if (scrollY === 0) {
-            this.link.forEach((element) => {
-              element.style.backgroundColor = "transparent";
-            });
-          }
-          isClick = false;
-        });
-        this.menu.addEventListener("click", (event) => {
+        animationHeader();
+      }
+      //Animation header on responsive
+      else if (window.innerWidth < 480) {
+        responsiveHeader();
+      }
+    });
+
+    window.addEventListener("resize", (event) => {
+      if (window.innerWidth < 480) {
+        this.menu.style.margin = "4rem 0 0 12rem";
+      } else if (window.innerWidth > 480) {
+        this.menu.style.margin = 0;
+      }
+    });
+
+    const animationHeader = () => {
+      document.addEventListener("scroll", (event) => {
+        if (scrollY > 0 && isClick === false) {
+          hamburger();
+        } else {
           this.menu.classList.remove("is-scroll");
           this.link.forEach((element) => {
             element.style.display = "block";
-            element.style.background = "var(--orangeless)";
           });
-          isClick = true;
-        });
-      }
-    });
-
-    document.addEventListener("DOMContentLoaded", (event) => {
-      if (window.innerWidth < 480) {
-        hamburger();
-        this.menu.style.padding = "4rem 4rem 0 0";
-        this.menu.addEventListener("click", (event) => {
-          this.menu.classList.add("container-nav-responsive");
-          this.menu.style.padding = 0;
+        }
+        if (scrollY === 0) {
           this.link.forEach((element) => {
-            element.style.display = "block";
+            element.style.backgroundColor = "transparent";
           });
-          this.line.forEach((element) => {
-            element.style.marginTop = 0;
-            element.style.position = "static";
-          });
-          for (let index = 0; index < this.subTitle.length; index++) {
-            this.subTitle[0].classList.add("menu-sub-left-line");
-            this.subTitle[1].classList.add("menu-sub-right-line");
-          }
-          isClick = true;
-          document.body.style.position = "fixed";
-        });
-
-        this.subTitle.forEach((element) => {
-          element.addEventListener("click", (event) => {
-            if (isClick === true) {
-              backToPage();
-            }
-          });
-        });
-
+        }
+        isClick = false;
+      });
+      this.menu.addEventListener("click", (event) => {
+        this.menu.classList.remove("is-scroll");
         this.link.forEach((element) => {
-          element.addEventListener("click", (event) => {
-            event.stopPropagation();
-            backToPage();
-          });
+          element.style.display = "block";
+          element.style.background = "var(--orangeless)";
         });
-      }
-    });
+        isClick = true;
+      });
+    };
+
+    const responsiveHeader = () => {
+      hamburger();
+      this.menu.style.padding = "4rem 4rem 0 0";
+      this.menu.addEventListener("click", (event) => {
+        this.menu.classList.add("container-nav-responsive");
+        this.menu.style.padding = 0;
+        this.link.forEach((element) => {
+          element.style.display = "block";
+        });
+        this.line.forEach((element) => {
+          element.style.margin = 0;
+          element.style.position = "static";
+        });
+        for (let index = 0; index < this.subTitle.length; index++) {
+          this.subTitle[0].classList.add("menu-sub-left-line");
+          this.subTitle[1].classList.add("menu-sub-right-line");
+        }
+        isClick = true;
+        document.body.style.position = "fixed";
+      });
+
+      this.subTitle.forEach((element) => {
+        element.addEventListener("click", (event) => {
+          if (isClick === true) {
+            backToPage();
+          }
+        });
+      });
+
+      this.link.forEach((element) => {
+        element.addEventListener("click", (event) => {
+          event.stopPropagation();
+          backToPage();
+        });
+      });
+    };
 
     const backToPage = () => {
       event.stopPropagation();
@@ -103,6 +121,7 @@ class Menu {
       });
       this.line.forEach((element) => {
         element.style.marginTop = 15 + "px";
+        element.style.marginRight = 3 + "rem";
         element.style.position = "relative";
       });
       this.subTitle.forEach((element) => {
@@ -141,19 +160,3 @@ hoverFirstSlider.forEach((element) => {
     });
   });
 });
-
-//animation
-
-// const displayOrange = document.querySelector(".landing-page .display-orange");
-// document.addEventListener("scroll", (event) => {
-//   console.log(scrollY);
-//   if (scrollY > 0) {
-//     displayOrange.style.animationName = "motionDisplayBottom";
-//     displayOrange.style.animationDuration = 2 + "s";
-//     displayOrange.style.animationIterationCount = 1;
-//     displayOrange.style.animationMode = "auto";
-//   }
-//   if (scrollY < 200) {
-//     // displayOrange.style.animationName = "motionDisplayTop";
-//   }
-// });

@@ -611,8 +611,7 @@ input {
         @media (max-width: 767px) {
           .form-contact-container .contact .contact-form .g-recaptcha {
             transform: scale(0.8);
-            transform-origin: 0 0;
-            padding-left: 4rem; } }
+            transform-origin: 0 0; } }
         @media (max-width: 480px) {
           .form-contact-container .contact .contact-form .g-recaptcha {
             padding-left: 2.5rem; } }
@@ -804,6 +803,9 @@ footer {
   background: #919191;
   display: flex;
   flex-direction: row; }
+  @media (max-width: 480px) {
+    footer {
+      flex-direction: column-reverse; } }
   footer p {
     font-size: 1.5rem;
     color: var(--secondary); }
@@ -813,14 +815,24 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+    @media (max-width: 480px) {
+      footer .footer-left {
+        padding-top: 2rem;
+        padding-bottom: 2rem; } }
     footer .footer-left p {
       color: #dfd7d7;
       padding-top: 4rem;
       padding-bottom: 8rem; }
+      @media (max-width: 480px) {
+        footer .footer-left p {
+          padding: 0; } }
     footer .footer-left .footer-img {
       max-width: 181px;
       max-height: 75px;
       padding-top: 4rem; }
+      @media (max-width: 480px) {
+        footer .footer-left .footer-img {
+          padding: 0; } }
       footer .footer-left .footer-img img {
         width: 100%; }
   footer .footer-center {
@@ -835,8 +847,14 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+    @media (max-width: 480px) {
+      footer .footer-right {
+        margin-top: 3rem; } }
     footer .footer-right p {
       margin: 1rem; }
+      @media (max-width: 480px) {
+        footer .footer-right p {
+          margin: 0; } }
 
 .container-material {
   display: flex;
@@ -877,6 +895,9 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center; }
+  @media (max-width: 480px) {
+    .header-display-orange {
+      height: 40vh; } }
   .header-display-orange .back-home {
     position: absolute;
     top: 0;
@@ -888,6 +909,10 @@ footer {
     font-weight: 300;
     letter-spacing: 0.11em;
     margin-right: 5rem; }
+    @media (max-width: 480px) {
+      .header-display-orange h2 {
+        font-size: 5rem;
+        margin-left: 3rem; } }
 
 .container-photos-service {
   display: grid;
@@ -898,6 +923,9 @@ footer {
   margin: 0 auto;
   padding-bottom: 5rem;
   position: relative; }
+  @media (max-width: 480px) {
+    .container-photos-service {
+      grid-template-columns: 1fr; } }
   .container-photos-service .fake-mid-orange {
     width: 100%;
     background: var(--orange);

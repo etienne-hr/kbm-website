@@ -5,6 +5,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include xs {
+    height: 40vh;
+  }
   .back-home {
     position: absolute;
     top: 0;
@@ -17,6 +20,10 @@
     font-weight: 300;
     letter-spacing: 0.11em;
     margin-right: 5rem;
+    @include xs {
+      font-size: 5rem;
+      margin-left: 3rem;
+    }
   }
 }
 .container-photos-service {
@@ -28,6 +35,9 @@
   margin: 0 auto;
   padding-bottom: 5rem;
   position: relative;
+  @include xs {
+    grid-template-columns: 1fr;
+  }
   .fake-mid-orange {
     width: 100%;
     background: var(--orange);
