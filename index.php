@@ -72,7 +72,7 @@ include './includes/config/form-handler.php';
                                         <label>Message</label>
                                         <textarea name="message"><?= $message ?></textarea>
                                 </fieldset>
-                                <div class="g-recaptcha" data-sitekey="6LeqBsoZAAAAAKOolvW-s2BSoFwiCQN8cgetqdzh"></div>
+                                <div class="g-recaptcha" data-sitekey="PASSWORD"></div>
                                 <button name="submit">Envoyer</button>
                         </form>
                 </div>
